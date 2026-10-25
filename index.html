@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#142b3d">
+  <meta name="description" content="Academia interactiva para estudiar Ingeniería de Software I: 24 temas, cuatro niveles de examen y material descargable.">
+  <title>Ingeniería de Software I · Academia de repaso</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+<div class="shell" id="shell">
+  <aside class="sidebar" id="sidebar" aria-label="Navegación principal">
+    <div class="brand"><div class="brand-symbol" aria-hidden="true">IS</div><div><strong>Software I</strong><small>Academia de repaso</small></div></div>
+    <div class="sidebar-subtitle">TU ESPACIO DE ESTUDIO</div>
+    <nav class="main-nav" id="mainNav" aria-label="Secciones">
+      <button type="button" data-route="inicio"><span aria-hidden="true">▦</span> Resumen</button>
+      <button type="button" data-route="temario"><span aria-hidden="true">▤</span> Temario completo</button>
+      <button type="button" data-route="examenes"><span aria-hidden="true">◎</span> Los cuatro exámenes</button>
+      <button type="button" data-route="repaso"><span aria-hidden="true">↻</span> Repaso activo</button>
+      <button type="button" data-route="recursos"><span aria-hidden="true">↓</span> Descargas y fuentes</button>
+      <button type="button" data-route="metodo"><span aria-hidden="true">◈</span> Método de estudio</button>
+    </nav>
+    <div class="sidebar-subtitle course-title">CONTENIDOS</div>
+    <nav class="lesson-nav" id="lessonNav" aria-label="Subtemas"></nav>
+    <div class="sidebar-foot"><div id="sideProgressText">0 de 24 temas estudiados</div><div class="progress-track"><div class="progress-fill" id="sideProgressBar"></div></div><span>Tu avance queda guardado en este navegador.</span></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div class="top-left"><button class="icon-button mobile-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="sidebar">☰</button><div><small class="overline">APRENDER · PRACTICAR · RECORDAR</small><div class="breadcrumbs" id="breadcrumbs">Inicio</div></div></div>
+      <div class="top-actions"><button type="button" class="top-quiet" id="focusToggle" title="Ocultar distracciones">◉ Modo concentración</button><button type="button" class="top-quiet" id="helpToggle" title="Cómo funciona">? Ayuda</button></div>
+    </header>
+    <main id="main" tabindex="-1" aria-live="off"></main>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<dialog id="helpDialog" class="help-dialog"><div class="dialog-title"><h2>Cómo estudiar aquí</h2><button type="button" class="icon-button" id="closeHelp" aria-label="Cerrar ayuda">×</button></div><p>Empieza por un tema, lee el contenido y trata de responder su pregunta de memoria antes de revelar la respuesta. Selecciona una frase de la lectura y pulsa <strong>Subrayar</strong>. Tus marcas y respuestas se guardan en este dispositivo.</p><p>Los exámenes permiten avanzar pregunta por pregunta. Al entregar verás explicaciones, temas a reforzar y una nota automática solamente para las preguntas cerradas. Las abiertas incluyen criterios para <strong>autoevaluarte</strong>: la página no finge corregir textos mediante inteligencia artificial.</p><p>En <strong>Descargas</strong> encontrarás los PDF para imprimir, el material de estudio y una exportación de tu progreso. Las funciones básicas no requieren internet.</p><p><strong>Atajos:</strong> Alt + ← y Alt + → para cambiar de pregunta durante un examen. Escape cierra este cuadro. El modo concentración reduce elementos visuales, pero no bloquea la navegación.</p><div class="dialog-actions"><button type="button" class="btn btn-primary" id="closeHelpBottom">Entendido</button></div></dialog>
+<noscript><div class="nojs">Esta página requiere JavaScript habilitado para los exámenes interactivos. Los PDF están disponibles en la carpeta «descargas».</div></noscript>
+</body>
+</html>

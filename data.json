@@ -1,0 +1,3432 @@
+{
+  "lessons": [
+    {
+      "id": "1.1",
+      "title": "Definiciones de ingeniería de software",
+      "unit": 1,
+      "pages": "U1, pp. 3–5",
+      "intro": "La ingeniería de software no equivale únicamente a programar: integra principios, métodos, herramientas, calidad y mantenimiento para construir software que resuelva necesidades.",
+      "points": [
+        [
+          "Bauer (1972)",
+          "Uso de principios de ingeniería bien fundados para obtener software fiable, económico y que funcione en máquinas reales."
+        ],
+        [
+          "IEEE (1993)",
+          "Aplicación de un enfoque sistemático, disciplinado y cuantificable al desarrollo, operación y mantenimiento del software."
+        ],
+        [
+          "Alan Davis",
+          "Aplicación inteligente de principios, técnicas, lenguajes y herramientas para crear y mantener software que satisfaga necesidades de los usuarios a costo razonable."
+        ],
+        [
+          "Boehm (1976)",
+          "Aplicación práctica del conocimiento científico al diseño y construcción de programas y de la documentación necesaria para desarrollarlos, operarlos y mantenerlos."
+        ],
+        [
+          "Idea en común",
+          "Todas las formulaciones persiguen resultados fiables mediante un trabajo organizado; se distinguen por su énfasis en métodos, usuario, economía y documentación."
+        ]
+      ],
+      "example": "Una aplicación de reservas bien ingenierizada comienza investigando necesidades, formula requisitos, implementa pruebas, se entrega y se mantiene.",
+      "recall": "¿Qué palabras usa el IEEE para caracterizar su enfoque?",
+      "trap": "Confundir ingeniería de software con escribir código exclusivamente.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "1.2",
+      "title": "Surgimiento, evolución y relación con otras disciplinas",
+      "unit": 1,
+      "pages": "U1, pp. 6–14",
+      "intro": "La crisis del software evidenció que la complejidad creciente superaba la capacidad para planear y entregar sistemas a tiempo. La presentación sitúa la conferencia de Garmisch en 1968 como hito de la disciplina.",
+      "points": [
+        [
+          "Primera era",
+          "Programación artesanal y poco planificada; los programas eran específicos y sus autores normalmente los mantenían."
+        ],
+        [
+          "Segunda era (mediados de 1960)",
+          "El software comenzó a distribuirse como producto y surgieron empresas dedicadas a su desarrollo."
+        ],
+        [
+          "Tercera era (mediados de 1970)",
+          "Aumentó la complejidad de los sistemas y aparecieron redes de computadoras."
+        ],
+        [
+          "Cuarta era (aprox. 1990)",
+          "El software se extendió a la economía y sociedad; las láminas destacan inteligencia artificial, redes neuronales y lógica difusa."
+        ],
+        [
+          "Disciplinas relacionadas",
+          "Matemáticas aportan pruebas y métodos formales; gestión de proyectos controla tiempo, costos y personas; ciencias de la computación enfatiza fundamentos; ingeniería de sistemas observa hardware, software y personas conjuntamente."
+        ],
+        [
+          "Áreas SWEBOK mencionadas",
+          "Requisitos, diseño, construcción, pruebas, mantenimiento, configuración, gestión, procesos, herramientas y métodos, y calidad del software."
+        ]
+      ],
+      "example": "Si un equipo no estima tiempos ni gestiona cambios, corre riesgos similares a los asociados históricamente con la crisis del software.",
+      "recall": "¿Qué diferencia hay entre ciencias de la computación e ingeniería del software?",
+      "trap": "Pensar que 1968 es el año en que se inventó el primer programa; se trata de un hito de denominación y organización de la disciplina.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "1.3",
+      "title": "Características del software",
+      "unit": 1,
+      "pages": "U1, pp. 15–18",
+      "intro": "El software es lógico, no una pieza física. Su construcción, costos y evolución no se comportan igual que los del hardware.",
+      "points": [
+        [
+          "Se desarrolla, no se fabrica clásicamente",
+          "Se diseña y programa; reproducir una copia tiene un costo marginal muy distinto al de fabricar piezas físicas."
+        ],
+        [
+          "No se desgasta físicamente",
+          "Un programa puede fallar por defectos y cambios del entorno, pero sus instrucciones no se deterioran por uso como un mecanismo."
+        ],
+        [
+          "Gran parte se construye a medida",
+          "Las láminas hacen énfasis en soluciones construidas para necesidades concretas, en contraste con el ensamble físico."
+        ],
+        [
+          "Los costos se concentran en ingeniería",
+          "Comprensión, diseño, construcción, pruebas y mantenimiento consumen esfuerzo significativo."
+        ],
+        [
+          "Mantenimiento es indispensable",
+          "Corregir defectos y adaptarse a nuevas necesidades es trabajo técnico, aunque no exista desgaste físico."
+        ]
+      ],
+      "example": "Una nueva versión del sistema operativo puede volver incompatible una aplicación intacta: el software no sufrió desgaste, pero necesita mantenimiento.",
+      "recall": "¿Por qué «no se estropea» no significa «no falla»?",
+      "trap": "Conclusión errónea: si el software no se desgasta, nunca requiere reparaciones.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "1.4",
+      "title": "Calidad del software según ISO/IEC 25000",
+      "unit": 1,
+      "pages": "U1, pp. 19–23",
+      "intro": "La familia SQuaRE sirve para especificar, medir y evaluar la calidad. Para el examen basado en las láminas debes reconocer las ocho características allí expuestas.",
+      "points": [
+        [
+          "Adecuación funcional (las láminas dicen «funcionalidad»)",
+          "Completitud, corrección y pertinencia de las funciones frente a necesidades."
+        ],
+        [
+          "Rendimiento",
+          "Tiempos de respuesta y utilización de recursos."
+        ],
+        [
+          "Compatibilidad",
+          "Coexistencia con otros productos e interoperabilidad o intercambio efectivo de información."
+        ],
+        [
+          "Fiabilidad",
+          "Madurez, disponibilidad, tolerancia a fallos y recuperación."
+        ],
+        [
+          "Usabilidad",
+          "Capacidad de aprendizaje, facilidad de uso, protección contra errores, estética y accesibilidad."
+        ],
+        [
+          "Seguridad",
+          "Confidencialidad, integridad, autenticidad, responsabilidad y no repudio, conforme al material."
+        ],
+        [
+          "Mantenibilidad",
+          "Modularidad, reutilización, análisis, modificación y prueba."
+        ],
+        [
+          "Portabilidad",
+          "Adaptabilidad e instalación/reemplazo en otros entornos."
+        ]
+      ],
+      "example": "Una plataforma de reservaciones puede ser funcional pero deficiente en rendimiento si cada búsqueda tarda demasiado.",
+      "recall": "Clasifica estos problemas: caída frecuente, filtración de datos, interfaz difícil, lentitud.",
+      "trap": "Confundir cumplimiento funcional con rapidez; son características distintas.",
+      "extra": "Actualización externa: ISO/IEC 25010:2023 define nueve características de calidad del producto. Esa edición no debe mezclarse sin avisar con la estructura histórica de ocho características explicada en las diapositivas. Fuente: https://www.iso.org/standard/78176.html",
+      "source": "Diapositivas; ampliación ISO 25010:2023"
+    },
+    {
+      "id": "1.5",
+      "title": "Definición y etapas del proceso de software",
+      "unit": 1,
+      "pages": "U1, pp. 24–29",
+      "intro": "Un proceso de software es un conjunto organizado de actividades y resultados para desarrollar y mantener un producto. No existe un único proceso ideal.",
+      "points": [
+        [
+          "Especificación de requisitos",
+          "Determina funcionalidades y restricciones; suele producir un documento de requisitos. Errores iniciales se propagan."
+        ],
+        [
+          "Diseño e implementación",
+          "Define estructura, componentes, interfaces, datos y algoritmos; después se construye software ejecutable."
+        ],
+        [
+          "Validación",
+          "Comprueba que el sistema cumple especificaciones y necesidades del cliente. Incluye pruebas de componentes, sistema y aceptación."
+        ],
+        [
+          "Mantenimiento o evolución",
+          "Adecúa el software a defectos, nuevas condiciones y necesidades cambiantes."
+        ],
+        [
+          "Adaptar el proceso",
+          "Sistemas críticos suelen necesitar estructuras rigurosas; negocios cambiantes pueden beneficiarse de mayor flexibilidad."
+        ]
+      ],
+      "example": "Antes de programar una reserva se especifican restricciones; luego se implementa, se verifica con pruebas y posteriormente se ajusta a nuevas políticas.",
+      "recall": "¿Cuál es la diferencia entre especificar, construir, validar y evolucionar?",
+      "trap": "Considerar la validación como una actividad que solo ocurre después de la entrega.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "1.6",
+      "title": "Herramientas para el desarrollo de software",
+      "unit": 1,
+      "pages": "U1, pp. 30–38",
+      "intro": "Las herramientas automatizan o apoyan actividades de un proceso de software. CASE significa Ingeniería de Software Asistida por Computadora.",
+      "points": [
+        [
+          "CASE",
+          "Incluye modeladores, diccionarios de datos, generadores de interfaces, depuradores y traductores automáticos; la integración entre herramientas permite reutilizar información."
+        ],
+        [
+          "Gestión de tareas",
+          "Jira, Trello y Asana organizan trabajo, incidencias y equipos."
+        ],
+        [
+          "Control de versiones",
+          "Git registra cambios; GitHub y GitLab hospedan repositorios y facilitan colaboración."
+        ],
+        [
+          "Integración y entrega continuas",
+          "Jenkins, Travis CI y CircleCI automatizan procesos de construcción y prueba."
+        ],
+        [
+          "Desarrollo y depuración",
+          "IDE como Eclipse, Visual Studio, PyCharm; depuradores como GDB y pdb."
+        ],
+        [
+          "Requisitos y documentación",
+          "IBM DOORS y Confluence respaldan requisitos; Swagger/OpenAPI y Sphinx documentan productos."
+        ],
+        [
+          "Pruebas",
+          "Selenium automatiza interacciones web; JUnit/TestNG permiten pruebas Java y PyTest pruebas Python."
+        ],
+        [
+          "Límites de CASE",
+          "No automatiza por completo decisiones creativas, negociación o diseño; requiere capacitación e integración."
+        ]
+      ],
+      "example": "Git permite recuperar cambios, Jira mostrar tareas pendientes y PyTest ejecutar pruebas automáticas de una aplicación Python.",
+      "recall": "¿Qué usarías para versiones, requisitos, pruebas web y CI/CD?",
+      "trap": "Pensar que una herramienta equivale al proceso o sustituye la colaboración humana.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "2.1",
+      "title": "Definición de modelo de proceso",
+      "unit": 2,
+      "pages": "U2, pp. 3–4",
+      "intro": "Un modelo de proceso es una representación abstracta y parcial de las actividades del desarrollo de software, vista desde un enfoque particular.",
+      "points": [
+        [
+          "No es una receta universal",
+          "Puede extenderse, configurarse y adaptarse a un proyecto real."
+        ],
+        [
+          "Familias de modelos",
+          "Tradicionales, incrementales, evolutivos, proceso unificado, ágiles y formales."
+        ],
+        [
+          "Diferencia fundamental",
+          "El proceso real es el trabajo ejecutado; el modelo organiza cómo comprenderlo y gestionarlo."
+        ]
+      ],
+      "example": "Un equipo puede adoptar Scrum pero complementar su trabajo con requisitos documentados y revisiones más formales.",
+      "recall": "¿Por qué un modelo de proceso no describe todos los proyectos con exactitud?",
+      "trap": "Confundir un modelo de desarrollo con una notación de código.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "2.2",
+      "title": "Modelos tradicionales: visión general",
+      "unit": 2,
+      "pages": "U2, pp. 5–6",
+      "intro": "Las metodologías tradicionales privilegian planificación anticipada, fases definidas y documentación; en las diapositivas se describen como poco flexibles ante cambios tardíos.",
+      "points": [
+        [
+          "Requisitos iniciales",
+          "Se busca conocer y establecer alcance al principio."
+        ],
+        [
+          "Enfoque secuencial",
+          "Una actividad principal suele cerrar antes de comenzar la siguiente."
+        ],
+        [
+          "Fortalezas",
+          "Trazabilidad documental, hitos explícitos y previsibilidad cuando los requisitos son estables."
+        ],
+        [
+          "Dificultades",
+          "Retroalimentación tardía y altos costos de cambios tardíos según contexto."
+        ]
+      ],
+      "example": "Un proyecto regulado con alcance contractual estable puede valorar entregables y aprobaciones claramente documentados.",
+      "recall": "¿Qué gana y qué pierde un proyecto al fijar requisitos desde el inicio?",
+      "trap": "Creer que todos los enfoques tradicionales prohíben cualquier corrección; las láminas enfatizan rigidez relativa.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "2.2.1",
+      "title": "Modelo en cascada",
+      "unit": 2,
+      "pages": "U2, pp. 7–9",
+      "intro": "El modelo de cascada (ciclo de vida clásico) avanza principalmente de manera secuencial, con objetivos definidos para cerrar cada fase.",
+      "points": [
+        [
+          "1. Análisis y definición de requerimientos",
+          "Se acuerdan restricciones, funciones y metas del sistema."
+        ],
+        [
+          "2. Diseño",
+          "Se describe arquitectura, componentes, abstracciones y relaciones."
+        ],
+        [
+          "3. Implementación y pruebas unitarias",
+          "Se programa cada unidad y se verifica frente a su especificación."
+        ],
+        [
+          "4. Integración y pruebas del sistema",
+          "Se ensamblan las unidades y se valida el sistema completo para entregarlo."
+        ],
+        [
+          "5. Operación y mantenimiento",
+          "El sistema se utiliza, corrige y adapta."
+        ],
+        [
+          "Fortaleza y limitación",
+          "Fácil de comprender y planificar; poco adaptable cuando se descubren requisitos tardíamente."
+        ]
+      ],
+      "example": "En un sistema de inventario con reglas muy estables, podría facilitar control y documentación de cada etapa.",
+      "recall": "Enumera las cinco fases del cascada en orden.",
+      "trap": "Interpretar cascada como entregas funcionales cada semana; su representación original es por etapas.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "2.2.2",
+      "title": "Modelo en V",
+      "unit": 2,
+      "pages": "U2, pp. 10–14",
+      "intro": "El modelo en V extiende la idea secuencial de cascada haciendo visible la correspondencia entre trabajo de desarrollo y niveles de prueba.",
+      "points": [
+        [
+          "Lado izquierdo",
+          "Requisitos, análisis y diseño descienden hasta codificación."
+        ],
+        [
+          "Lado derecho",
+          "Las pruebas ascienden desde unidades hacia integración, sistema y aceptación."
+        ],
+        [
+          "Correspondencias",
+          "Codificación ↔ pruebas unitarias; diseño ↔ integración/sistema; requisitos ↔ aceptación (según esquema de clase)."
+        ],
+        [
+          "Ventajas",
+          "Verificación planificada, revisiones por fase, documentación y responsabilidad."
+        ],
+        [
+          "Desventajas",
+          "Si los requisitos cambian mucho, replanear etapas y pruebas puede resultar costoso; el usuario observa el producto completo tarde."
+        ]
+      ],
+      "example": "Si se especifica «solo usuarios activos pueden reservar», desde requisitos se prepara qué probar en aceptación.",
+      "recall": "¿Qué actividad de prueba se vincula con codificación?",
+      "trap": "Confundir la V con un modelo iterativo de prototipos.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "2.3",
+      "title": "Modelos incrementales: visión general",
+      "unit": 2,
+      "pages": "U2, pp. 15–22",
+      "intro": "Los modelos incrementales construyen el producto por entregas funcionales sucesivas. Cada entrega añade valor utilizable y permite conocer antes el comportamiento real.",
+      "points": [
+        [
+          "Incrementos",
+          "Cada etapa produce una versión operativa más amplia."
+        ],
+        [
+          "Priorización",
+          "Se atienden primero funciones esenciales o riesgos relevantes."
+        ],
+        [
+          "Evaluación",
+          "Los usuarios pueden probar versiones tempranas."
+        ],
+        [
+          "Riesgos",
+          "Distribuir trabajo entre incrementos y gestionar arquitectura compartida requiere experiencia."
+        ]
+      ],
+      "example": "Una aplicación de hospedaje puede lanzar búsqueda primero, pagos después y notificaciones en una tercera entrega.",
+      "recall": "¿En qué se distingue un incremento funcional de una fase de cascada?",
+      "trap": "Creer que incremento significa solo maqueta sin funciones utilizables.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "2.3.1",
+      "title": "Modelo incremental",
+      "unit": 2,
+      "pages": "U2, pp. 15–22",
+      "intro": "Combina secuencias de actividades con entregas escalonadas; el primer incremento normalmente es el núcleo funcional.",
+      "points": [
+        [
+          "Primer incremento",
+          "Ofrece las funciones esenciales para comenzar a utilizar y evaluar el producto."
+        ],
+        [
+          "Siguientes incrementos",
+          "Amplían la solución de forma controlada hasta acercarse al conjunto de necesidades."
+        ],
+        [
+          "Beneficios",
+          "Entrega temprana, depuración en unidades de trabajo pequeñas, feedback y gestión de riesgos."
+        ],
+        [
+          "Limitaciones de las láminas",
+          "Puede ser difícil estimar el costo completo y proteger la arquitectura cuando aparecen requisitos no anticipados."
+        ],
+        [
+          "Matiz importante",
+          "Algunas diapositivas describen una arquitectura inicial completa y requisitos definidos al comienzo; esto representa el enfoque particular del material, no todos los posibles procesos incrementales."
+        ]
+      ],
+      "example": "El incremento 1 permite consultar habitaciones; el 2 incorpora la solicitud de reserva; el 3 integra recordatorios.",
+      "recall": "¿Qué debe entregar el incremento 1 para que aporte valor?",
+      "trap": "Confundir incremento con simple repetición de trabajo sin nueva funcionalidad.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "2.3.2",
+      "title": "DRA: desarrollo rápido de aplicaciones",
+      "unit": 2,
+      "pages": "U2, pp. 23–28",
+      "intro": "DRA/RAD procura periodos cortos, en las láminas se indica una referencia de 60 a 90 días, utilizando componentes, herramientas y colaboración del usuario.",
+      "points": [
+        [
+          "Modelado de gestión",
+          "Identifica flujo de información y actores que la procesan."
+        ],
+        [
+          "Modelado de datos",
+          "Define entidades, almacenes y relaciones."
+        ],
+        [
+          "Modelado de procesos",
+          "Describe operaciones para crear, modificar, consultar y suprimir datos."
+        ],
+        [
+          "Generación de aplicaciones",
+          "Aprovecha herramientas y componentes para acelerar implementación."
+        ],
+        [
+          "Pruebas y entrega",
+          "Valida el producto y prepara su implementación."
+        ],
+        [
+          "Condiciones de éxito",
+          "Clientes disponibles, equipo comprometido, alcance manejable y herramientas adecuadas."
+        ]
+      ],
+      "example": "Un formulario de trámites interno puede crearse rápidamente con herramientas visuales y componentes probados, pero aún requiere pruebas.",
+      "recall": "¿Cuáles son las cinco etapas DRA presentadas?",
+      "trap": "Creer que DRA significa software sin calidad ni participación del usuario.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "2.4",
+      "title": "Modelos evolutivos: visión general",
+      "unit": 2,
+      "pages": "U2, pp. 29–34",
+      "intro": "En el enfoque evolutivo, una versión inicial se refina a partir de comentarios del usuario. Especificación, desarrollo y validación se entrelazan.",
+      "points": [
+        [
+          "Desarrollo exploratorio",
+          "Empieza con lo bien comprendido y evoluciona hacia un producto final con el cliente."
+        ],
+        [
+          "Prototipos desechables",
+          "Experimentan para comprender requisitos inciertos; el prototipo no tiene por qué convertirse en el producto."
+        ],
+        [
+          "Ventaja",
+          "Hace posible incorporar descubrimientos durante el proyecto."
+        ],
+        [
+          "Riesgos",
+          "El avance puede ser difícil de medir y los cambios continuos pueden degradar la estructura si no se controla."
+        ]
+      ],
+      "example": "Un usuario prueba una pantalla de reserva, descubre que necesita filtros y el equipo ajusta una nueva versión.",
+      "recall": "¿Qué diferencia al desarrollo exploratorio de un prototipo desechable?",
+      "trap": "Confundir evolución del producto con ausencia total de arquitectura.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "2.4.1",
+      "title": "Modelo de prototipos",
+      "unit": 2,
+      "pages": "U2, pp. 35–39",
+      "intro": "Un prototipo es una representación preliminar que permite aclarar expectativas, descubrir necesidades y evaluar ideas con el cliente.",
+      "points": [
+        [
+          "Recopilación",
+          "Identificar objetivos y requisitos conocidos."
+        ],
+        [
+          "Construcción rápida",
+          "Crear una maqueta o sistema parcial centrado en los aspectos visibles o inciertos."
+        ],
+        [
+          "Evaluación",
+          "Mostrarla al cliente y recibir observaciones."
+        ],
+        [
+          "Refinamiento",
+          "Corregir la comprensión y repetir el ciclo si es necesario."
+        ],
+        [
+          "Precaución",
+          "Un prototipo pensado solo para aprender no debería ponerse en producción sin ingeniería y pruebas suficientes."
+        ]
+      ],
+      "example": "Antes de construir el módulo completo de reservaciones, se prueba un prototipo de calendario de disponibilidad.",
+      "recall": "¿Por qué no siempre conviene convertir directamente el prototipo en producto final?",
+      "trap": "Asumir que cualquier prototipo necesariamente debe conservarse en la arquitectura final.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "2.4.2",
+      "title": "Modelo en espiral",
+      "unit": 2,
+      "pages": "U2, pp. 40–44",
+      "intro": "Propuesto por Barry Boehm, organiza ciclos sucesivos y coloca el análisis del riesgo en el centro de las decisiones de desarrollo.",
+      "points": [
+        [
+          "1. Definición de objetivos",
+          "Establecer alternativas, metas y restricciones del ciclo."
+        ],
+        [
+          "2. Evaluación y reducción de riesgos",
+          "Analizar riesgos de las alternativas; usar prototipos o experimentos cuando sea útil."
+        ],
+        [
+          "3. Desarrollo y validación",
+          "Construir y comprobar la solución seleccionada."
+        ],
+        [
+          "4. Planificación del siguiente ciclo",
+          "Revisar lo obtenido y determinar actividades de la próxima vuelta."
+        ],
+        [
+          "Fortaleza",
+          "Adapta técnica y esfuerzo al riesgo del proyecto."
+        ],
+        [
+          "Limitación",
+          "Exige capacidad para identificar riesgos y gestionar el proceso."
+        ]
+      ],
+      "example": "Si un componente externo podría fallar, el equipo primero realiza un prototipo técnico y prueba ese riesgo antes de construir todo el sistema.",
+      "recall": "¿Qué se hace en el segundo sector de la espiral y por qué?",
+      "trap": "Confundir espiral con cascada repetida sin evaluación de riesgos.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "2.4.3",
+      "title": "Desarrollo concurrente",
+      "unit": 2,
+      "pages": "U2, pp. 45–49",
+      "intro": "El desarrollo concurrente representa varias actividades en curso simultáneamente, cada una en un estado propio.",
+      "points": [
+        [
+          "Actividades coexistentes",
+          "Comunicación, modelado, construcción y otras tareas pueden avanzar en paralelo."
+        ],
+        [
+          "Estados",
+          "Una actividad puede estar en desarrollo, en revisión o a la espera de cambios según la representación."
+        ],
+        [
+          "Beneficio",
+          "Permite visibilidad del estado real y cooperación multidisciplinaria."
+        ],
+        [
+          "Reto",
+          "Exige sincronizar información y manejar dependencias entre equipos."
+        ]
+      ],
+      "example": "Mientras un grupo valida una interfaz, otro implementa servicios; ambos coordinan cambios mediante acuerdos y pruebas.",
+      "recall": "¿Qué significa que dos actividades existan de manera concurrente?",
+      "trap": "Confundir concurrencia de tareas con ausencia de coordinación.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "2.5",
+      "title": "Proceso unificado (RUP)",
+      "unit": 2,
+      "pages": "U2, pp. 50–64",
+      "intro": "El Proceso Unificado, en las diapositivas presentado mediante RUP, utiliza casos de uso, arquitectura y desarrollo iterativo e incremental; emplea UML para representar vistas del sistema.",
+      "points": [
+        [
+          "Tres rasgos",
+          "Dirigido por casos de uso, centrado en arquitectura, iterativo e incremental."
+        ],
+        [
+          "Inicio",
+          "Justificación del negocio, actores, alcance inicial y viabilidad."
+        ],
+        [
+          "Elaboración",
+          "Comprensión del dominio, arquitectura, planificación y riesgos principales."
+        ],
+        [
+          "Construcción",
+          "Desarrollo de componentes, integración, implementación y pruebas."
+        ],
+        [
+          "Transición",
+          "Paso del producto al entorno de usuarios, operación y adopción."
+        ],
+        [
+          "Mejores prácticas",
+          "Desarrollo iterativo, gestión de requisitos, arquitectura por componentes, modelado visual, verificación de calidad y control de cambios."
+        ],
+        [
+          "UML",
+          "Lenguaje de modelado empleado para documentar y visualizar distintas perspectivas del sistema."
+        ]
+      ],
+      "example": "En un sistema de biblioteca, los casos de uso de préstamo guían requisitos y la arquitectura de servicios se estabiliza en elaboración.",
+      "recall": "¿Cuáles son las cuatro fases de RUP y sus tres rasgos?",
+      "trap": "Confundir las cuatro fases RUP con actividades exclusivas: en cada fase pueden existir diversos flujos de trabajo.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "2.6",
+      "title": "Modelos ágiles: visión general",
+      "unit": 2,
+      "pages": "U2, pp. 65–72",
+      "intro": "Las metodologías ágiles se apoyan en el Manifiesto Ágil (2001). Su propósito es entregar valor y responder a cambios con colaboración y aprendizaje frecuente.",
+      "points": [
+        [
+          "Valores del manifiesto",
+          "Individuos e interacciones; software funcionando; colaboración con el cliente; respuesta al cambio, valorados más que sus contrapartes tradicionales."
+        ],
+        [
+          "No excluyen disciplina",
+          "Procesos, herramientas, documentación y contratos siguen siendo útiles, pero no desplazan el valor del producto y la colaboración."
+        ],
+        [
+          "Rasgos de las láminas",
+          "Iteraciones, mejora continua, pruebas, priorización por valor y colaboración frecuente."
+        ],
+        [
+          "Diversidad",
+          "Scrum, XP, DSDM y otros enfoques tienen estructuras y prácticas diferentes."
+        ]
+      ],
+      "example": "Un cliente aprende tras usar una versión y modifica prioridades; el equipo ajusta su siguiente entrega sin perder control.",
+      "recall": "¿Qué se valora más: responder al cambio o seguir ciegamente el plan?",
+      "trap": "Pensar que «ágil» significa desarrollar sin documentación o sin pruebas.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "2.6.1",
+      "title": "Principios de los modelos ágiles",
+      "unit": 2,
+      "pages": "U2, pp. 67–71",
+      "intro": "Los doce principios del Manifiesto explican cómo convertir los cuatro valores en decisiones cotidianas de desarrollo.",
+      "points": [
+        [
+          "Satisfacción y valor",
+          "Entregar software útil temprano y continuamente."
+        ],
+        [
+          "Cambio",
+          "Aceptar cambios incluso cuando el proyecto ya avanza."
+        ],
+        [
+          "Frecuencia",
+          "Entregar productos que funcionan con periodos cortos."
+        ],
+        [
+          "Colaboración",
+          "Negocio y desarrollo deben trabajar juntos."
+        ],
+        [
+          "Personas",
+          "Confiar en equipos motivados y facilitar conversaciones efectivas."
+        ],
+        [
+          "Progreso",
+          "Medirlo fundamentalmente por software funcionando."
+        ],
+        [
+          "Sostenibilidad",
+          "Mantener un ritmo razonable sin desgaste del equipo."
+        ],
+        [
+          "Excelencia",
+          "Cuidar diseño y calidad técnica."
+        ],
+        [
+          "Simplicidad",
+          "Evitar trabajo innecesario."
+        ],
+        [
+          "Autonomía y mejora",
+          "Equipos autoorganizados y reflexiones periódicas para mejorar."
+        ]
+      ],
+      "example": "Una retrospectiva identifica que se retrasan pruebas; el equipo acuerda automatizarlas en la siguiente iteración.",
+      "recall": "¿Por qué el manifiesto habla de software funcionando como medida de progreso?",
+      "trap": "Creer que «aceptar cambios» significa no definir una meta o no priorizar.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "2.6.2",
+      "title": "Programación extrema (XP)",
+      "unit": 2,
+      "pages": "U2, pp. 73–87",
+      "intro": "XP, asociada a Kent Beck, enfatiza comunicación, simplicidad, retroalimentación, coraje y prácticas técnicas que sostienen cambios frecuentes.",
+      "points": [
+        [
+          "Historias de usuario",
+          "El cliente expresa funcionalidades y prioridades con descripciones breves."
+        ],
+        [
+          "Roles",
+          "Programadores construyen y prueban; cliente prioriza y valida; coach ayuda a mantener las prácticas."
+        ],
+        [
+          "Ciclo explicado",
+          "Exploración, planificación de entregas, iteraciones, producción, mantenimiento y finalización del proyecto."
+        ],
+        [
+          "Programación en parejas",
+          "Dos personas colaboran en el mismo trabajo de código."
+        ],
+        [
+          "Pruebas e integración continua",
+          "Automatizar verificación y fusionar código regularmente reduce defectos difíciles de aislar."
+        ],
+        [
+          "Refactorización y diseño simple",
+          "Mejorar estructura sin alterar comportamiento, evitar complejidad innecesaria."
+        ],
+        [
+          "Propiedad colectiva, estándares y ritmo sostenible",
+          "Fomentan trabajo de equipo, legibilidad y continuidad."
+        ]
+      ],
+      "example": "Para una historia «como alumno quiero consultar mis calificaciones», el cliente define aceptación y el equipo desarrolla con pruebas automatizadas.",
+      "recall": "¿Qué relación hay entre pruebas automatizadas y cambios frecuentes en XP?",
+      "trap": "Confundir XP con solo programar rápido sin disciplina de pruebas.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "2.6.3",
+      "title": "DSDM: método de desarrollo de sistemas dinámicos",
+      "unit": 2,
+      "pages": "U2, pp. 88–98",
+      "intro": "DSDM surgió en 1994 como evolución de RAD; combina desarrollo iterativo e incremental, tiempos delimitados y participación activa del negocio.",
+      "points": [
+        [
+          "Ocho principios",
+          "Enfocarse en el negocio; entregar a tiempo; colaborar; no comprometer la calidad; construir gradualmente desde bases firmes; desarrollar iterativamente; comunicar de forma continua y clara; demostrar control."
+        ],
+        [
+          "Timeboxing",
+          "Trabajar con periodos de duración fija para tomar decisiones realistas sobre alcance y prioridades."
+        ],
+        [
+          "Fases históricas en diapositivas",
+          "Se describen estudio de viabilidad, estudio del negocio, modelado funcional, diseño/construcción e implementación."
+        ],
+        [
+          "Vista ampliada del propio material",
+          "Más adelante se presenta otra organización del ciclo con preproyecto, factibilidad, fundamentos, exploración, ingeniería, despliegue y postproyecto: corresponde a una exposición de versiones/variantes de DSDM."
+        ],
+        [
+          "Necesidad clave",
+          "Participación de usuarios y claridad del valor esperado."
+        ]
+      ],
+      "example": "En una entrega con fecha fija, el equipo prioriza lo esencial, sin reducir el estándar de calidad definido.",
+      "recall": "Enumera cuatro principios DSDM y explica timeboxing.",
+      "trap": "Interpretar entrega a tiempo como permiso para sacrificar calidad.",
+      "extra": "",
+      "source": "Diapositivas"
+    },
+    {
+      "id": "2.6.4",
+      "title": "Scrum",
+      "unit": 2,
+      "pages": "U2, pp. 99–108",
+      "intro": "Scrum organiza el trabajo complejo con un equipo responsable, sprints, inspección y adaptación. Las láminas cubren roles, artefactos, eventos y valores.",
+      "points": [
+        [
+          "Responsabilidades",
+          "Product Owner optimiza valor y ordena trabajo; Scrum Master ayuda a comprender Scrum y eliminar impedimentos; Developers crean incrementos."
+        ],
+        [
+          "Artefactos",
+          "Product Backlog: trabajo del producto; Sprint Backlog: plan de trabajo del sprint; Incremento: resultado utilizable."
+        ],
+        [
+          "Eventos",
+          "Sprint Planning, Daily Scrum, Sprint Review y Sprint Retrospective ocurren dentro del Sprint."
+        ],
+        [
+          "Revisión frente a retrospectiva",
+          "Review inspecciona el resultado y adapta el producto; retrospectiva identifica mejoras del modo de trabajo."
+        ],
+        [
+          "Valores",
+          "Compromiso, enfoque, apertura, respeto y valentía."
+        ],
+        [
+          "Duración",
+          "Las láminas incluyen referencias a sprints de 30 días y también de unas dos semanas; la Guía Scrum 2020 vigente especifica uno mes o menos, no una duración única."
+        ],
+        [
+          "Reunión diaria",
+          "Evento breve, orientado a inspeccionar progreso hacia el objetivo del sprint y adaptar el plan."
+        ]
+      ],
+      "example": "El Product Backlog tiene 20 mejoras; en Sprint Planning se seleccionan 4; el equipo entrega una versión usable y la muestra en la Review.",
+      "recall": "¿Qué diferencia hay entre Product Backlog, Sprint Backlog e incremento?",
+      "trap": "Confundir la reunión diaria con un informe formal obligatorio al jefe.",
+      "extra": "Ampliación externa para versiones y duración: https://scrumguides.org/download.html",
+      "source": "Diapositivas; Guía Scrum 2020"
+    },
+    {
+      "id": "2.7",
+      "title": "Modelos formales",
+      "unit": 2,
+      "pages": "U2, pp. 109–119",
+      "intro": "Los métodos formales emplean lenguajes y argumentos matemáticamente rigurosos para especificar, diseñar y verificar propiedades de sistemas.",
+      "points": [
+        [
+          "Fases de las láminas",
+          "Análisis de requisitos; especificación formal; transformación; integración del sistema final."
+        ],
+        [
+          "Especificaciones lógicas",
+          "Lógica de primer orden y teoría de conjuntos expresan estados, operaciones y propiedades."
+        ],
+        [
+          "Especificaciones algebraicas",
+          "Definen tipos y operaciones mediante axiomas o ecuaciones."
+        ],
+        [
+          "Álgebra de procesos",
+          "Permite describir interacción y coordinación entre procesos concurrentes."
+        ],
+        [
+          "Redes de Petri",
+          "Modelan concurrencia con lugares, marcas y transiciones."
+        ],
+        [
+          "Lógica temporal",
+          "Formula propiedades de sistemas reactivos y eventos en el tiempo."
+        ],
+        [
+          "Aplicación",
+          "Especialmente útil cuando las fallas pueden comprometer seguridad o fiabilidad de sistemas críticos."
+        ],
+        [
+          "Costo",
+          "Requiere conocimiento especializado y puede demandar inversión elevada."
+        ]
+      ],
+      "example": "En señalización ferroviaria se modela formalmente que no pueden autorizarse dos trenes a ocupar el mismo segmento al mismo tiempo.",
+      "recall": "¿Qué diferencia hay entre una red de Petri y una especificación algebraica?",
+      "trap": "Considerar los métodos formales simples diagramas sin semántica matemática.",
+      "extra": "",
+      "source": "Diapositivas"
+    }
+  ],
+  "exams": {
+    "1": {
+      "name": "Muy fácil",
+      "subtitle": "Reconocimiento de conceptos · una respuesta por pregunta",
+      "questions": [
+        {
+          "id": "l1-1",
+          "type": "choice",
+          "topic": "1.1 Definiciones",
+          "sourcePage": 3,
+          "question": "Según la definición del IEEE presentada en clase, la ingeniería de software aplica un enfoque:",
+          "options": [
+            "Limitado a escribir código",
+            "Improvisado y exclusivamente creativo",
+            "Enfocado solo en reparar equipos",
+            "Sistemático, disciplinado y cuantificable"
+          ],
+          "answer": 3,
+          "feedback": "El IEEE destaca el enfoque sistemático, disciplinado y cuantificable para desarrollo, operación y mantenimiento."
+        },
+        {
+          "id": "l1-2",
+          "type": "choice",
+          "topic": "1.1 Definiciones",
+          "sourcePage": 3,
+          "question": "Según Bauer, ¿qué tipo de software se busca mediante principios de ingeniería?",
+          "options": [
+            "Únicamente de uso científico",
+            "Sin necesidad de planificación",
+            "Costoso y difícil de mantener",
+            "Fiable, económico y que funcione en máquinas reales"
+          ],
+          "answer": 3,
+          "feedback": "Bauer pone el énfasis en software fiable y económico que funcione en máquinas reales."
+        },
+        {
+          "id": "l1-3",
+          "type": "choice",
+          "topic": "1.1 Definiciones",
+          "sourcePage": 4,
+          "question": "En la definición de Alan Davis, el software debe satisfacer principalmente:",
+          "options": [
+            "Las exigencias del fabricante del hardware",
+            "Las necesidades de los usuarios",
+            "El lenguaje favorito del equipo",
+            "La cantidad máxima de funciones"
+          ],
+          "answer": 1,
+          "feedback": "Davis relaciona la creación y el mantenimiento a costo razonable con las necesidades de los usuarios."
+        },
+        {
+          "id": "l1-4",
+          "type": "choice",
+          "topic": "1.1 Definiciones",
+          "sourcePage": 4,
+          "question": "Según la definición atribuida a Boehm (1976), la ingeniería de software se relaciona con:",
+          "options": [
+            "La construcción física de computadores",
+            "Conocimiento científico aplicado a programas y su documentación",
+            "La venta de equipos de redes",
+            "El ensamblaje industrial de pantallas"
+          ],
+          "answer": 1,
+          "feedback": "La presentación incluye diseño y construcción de programas y documentación para desarrollarlos, operarlos y mantenerlos."
+        },
+        {
+          "id": "l1-5",
+          "type": "choice",
+          "topic": "1.2 Evolución y disciplinas",
+          "sourcePage": 6,
+          "question": "¿En qué año sitúa la presentación el surgimiento del concepto de ingeniería del software en Garmisch?",
+          "options": [
+            "1968",
+            "1950",
+            "1985",
+            "2001"
+          ],
+          "answer": 0,
+          "feedback": "La presentación sitúa el surgimiento del concepto en la conferencia de Garmisch de 1968."
+        },
+        {
+          "id": "l1-6",
+          "type": "choice",
+          "topic": "1.2 Evolución y disciplinas",
+          "sourcePage": 6,
+          "question": "¿Qué problema histórico impulsó la aparición de la ingeniería de software?",
+          "options": [
+            "La desaparición del hardware",
+            "La falta de redes inalámbricas",
+            "La prohibición de los lenguajes",
+            "La crisis del software"
+          ],
+          "answer": 3,
+          "feedback": "La crisis del software evidenció retrasos y dificultades frente al aumento de complejidad."
+        },
+        {
+          "id": "l1-7",
+          "type": "choice",
+          "topic": "1.2 Evolución y disciplinas",
+          "sourcePage": 8,
+          "question": "En la segunda época descrita, el software comenzó a considerarse:",
+          "options": [
+            "Un accesorio sin valor",
+            "Una rama de la electrónica analógica",
+            "Un equipo físico",
+            "Un producto distribuido masivamente"
+          ],
+          "answer": 3,
+          "feedback": "A mediados de los sesenta surgieron empresas de desarrollo y distribución masiva de software."
+        },
+        {
+          "id": "l1-8",
+          "type": "choice",
+          "topic": "1.2 Evolución y disciplinas",
+          "sourcePage": 9,
+          "question": "¿Qué fenómeno caracteriza la tercera era descrita en la presentación?",
+          "options": [
+            "Sustitución del software por cables",
+            "Desaparición del software empresarial",
+            "Aparición general de las redes de ordenadores",
+            "Inicio del Manifiesto Ágil"
+          ],
+          "answer": 2,
+          "feedback": "La tercera era se caracteriza por mayor complejidad y surgimiento de redes de ordenadores."
+        },
+        {
+          "id": "l1-9",
+          "type": "choice",
+          "topic": "1.2 Evolución y disciplinas",
+          "sourcePage": 10,
+          "question": "¿Qué temas se mencionan al describir la cuarta era, alrededor de 1990?",
+          "options": [
+            "Redes neuronales y lógica difusa",
+            "Solo líneas de ensamblaje",
+            "Ausencia de sistemas personales",
+            "Tarjetas perforadas y válvulas"
+          ],
+          "answer": 0,
+          "feedback": "La presentación señala las redes neuronales y la lógica difusa ligadas a inteligencia artificial."
+        },
+        {
+          "id": "l1-10",
+          "type": "choice",
+          "topic": "1.2 Evolución y disciplinas",
+          "sourcePage": 11,
+          "question": "¿Qué disciplina aporta fundamentos para demostrar propiedades de algoritmos?",
+          "options": [
+            "Matemáticas",
+            "Contabilidad de inventarios",
+            "Mercadotecnia",
+            "Diseño industrial de carcasas"
+          ],
+          "answer": 0,
+          "feedback": "Las matemáticas aportan pruebas rigurosas de corrección y complejidad."
+        },
+        {
+          "id": "l1-11",
+          "type": "choice",
+          "topic": "1.2 Evolución y disciplinas",
+          "sourcePage": 13,
+          "question": "Según la comparación presentada, las ciencias de la computación se centran más en:",
+          "options": [
+            "Comercialización de aplicaciones",
+            "Fabricación de circuitos",
+            "Teorías y fundamentos",
+            "Administración de contratos"
+          ],
+          "answer": 2,
+          "feedback": "La lámina distingue teoría y fundamentos frente a los aspectos prácticos de ingeniería de software."
+        },
+        {
+          "id": "l1-12",
+          "type": "choice",
+          "topic": "1.2 Evolución y disciplinas",
+          "sourcePage": 11,
+          "question": "¿Qué área se encarga de presupuestos, tiempos de entrega y coordinación del equipo?",
+          "options": [
+            "Gestión de proyectos",
+            "Compilación de programas",
+            "Diseño de bases de datos exclusivamente",
+            "Mantenimiento físico de servidores"
+          ],
+          "answer": 0,
+          "feedback": "La gestión de proyectos organiza tiempos, presupuesto, personas y recursos."
+        },
+        {
+          "id": "l1-13",
+          "type": "choice",
+          "topic": "1.2 Evolución y disciplinas",
+          "sourcePage": 14,
+          "question": "¿Cuál de los siguientes temas aparece en SWEBOK según la presentación?",
+          "options": [
+            "Diseño de automóviles",
+            "Control del tráfico marítimo",
+            "Mantenimiento de edificios",
+            "Pruebas del software"
+          ],
+          "answer": 3,
+          "feedback": "SWEBOK incluye pruebas, requisitos, diseño, construcción y otras áreas de ingeniería de software."
+        },
+        {
+          "id": "l1-14",
+          "type": "choice",
+          "topic": "1.3 Características",
+          "sourcePage": 15,
+          "question": "El software se considera principalmente un elemento:",
+          "options": [
+            "Lógico, no físico",
+            "Electromagnético de desgaste inevitable",
+            "Físico y mecánico",
+            "Químico"
+          ],
+          "answer": 0,
+          "feedback": "La presentación destaca que el software es lógico y se diferencia del hardware físico."
+        },
+        {
+          "id": "l1-15",
+          "type": "choice",
+          "topic": "1.3 Características",
+          "sourcePage": 15,
+          "question": "¿Cuál afirmación expresa una característica del software de las diapositivas?",
+          "options": [
+            "Siempre se ensambla sin programar",
+            "Necesita repuestos físicos para cada error",
+            "Se fabrica exactamente como una pieza metálica",
+            "Se desarrolla, no se fabrica en sentido clásico"
+          ],
+          "answer": 3,
+          "feedback": "El desarrollo del software no corresponde a la fabricación industrial clásica."
+        },
+        {
+          "id": "l1-16",
+          "type": "choice",
+          "topic": "1.3 Características",
+          "sourcePage": 17,
+          "question": "¿Qué significa en la presentación que el software «no se estropea»?",
+          "options": [
+            "Nunca requiere mantenimiento",
+            "No puede presentar fallos",
+            "No puede tener errores de diseño",
+            "No sufre desgaste físico como el hardware"
+          ],
+          "answer": 3,
+          "feedback": "No se desgasta físicamente; sí puede contener fallos y requerir mantenimiento."
+        },
+        {
+          "id": "l1-17",
+          "type": "choice",
+          "topic": "1.3 Características",
+          "sourcePage": 18,
+          "question": "¿Cómo se describe la construcción de la mayoría del software en la presentación?",
+          "options": [
+            "Frecuentemente a medida",
+            "Solo a partir de circuitos",
+            "Siempre sin requisitos",
+            "Por fundición de piezas"
+          ],
+          "answer": 0,
+          "feedback": "La lámina indica que mucho software se construye a medida, frente a ensamblaje físico."
+        },
+        {
+          "id": "l1-18",
+          "type": "choice",
+          "topic": "1.3 Características",
+          "sourcePage": 16,
+          "question": "¿Dónde se concentra gran parte del costo del software, según la presentación?",
+          "options": [
+            "En la impresión de etiquetas",
+            "En piezas de repuesto mecánicas",
+            "En la ingeniería y el desarrollo",
+            "En las materias primas del producto"
+          ],
+          "answer": 2,
+          "feedback": "La ingeniería es central en los costos del software."
+        },
+        {
+          "id": "l1-19",
+          "type": "choice",
+          "topic": "1.4 Calidad ISO 25000",
+          "sourcePage": 19,
+          "question": "La serie ISO/IEC 25000 se denomina también:",
+          "options": [
+            "TCP/IP",
+            "COBOL",
+            "SQuaRE",
+            "HTML"
+          ],
+          "answer": 2,
+          "feedback": "SQuaRE identifica la familia para requisitos y evaluación de calidad de producto software."
+        },
+        {
+          "id": "l1-20",
+          "type": "choice",
+          "topic": "1.4 Calidad ISO 25000",
+          "sourcePage": 20,
+          "question": "¿Qué característica de calidad considera si las funciones satisfacen las necesidades?",
+          "options": [
+            "Mantenibilidad",
+            "Portabilidad",
+            "Adecuación funcional (funcionalidad en las láminas)",
+            "Compatibilidad"
+          ],
+          "answer": 2,
+          "feedback": "La presentación llama funcionalidad al cumplimiento de necesidades mediante funciones."
+        },
+        {
+          "id": "l1-21",
+          "type": "choice",
+          "topic": "1.4 Calidad ISO 25000",
+          "sourcePage": 20,
+          "question": "¿Qué característica analiza tiempos de respuesta y utilización de recursos?",
+          "options": [
+            "Seguridad",
+            "Usabilidad",
+            "Rendimiento",
+            "Portabilidad"
+          ],
+          "answer": 2,
+          "feedback": "Rendimiento se relaciona con comportamiento temporal y uso de recursos."
+        },
+        {
+          "id": "l1-22",
+          "type": "choice",
+          "topic": "1.4 Calidad ISO 25000",
+          "sourcePage": 21,
+          "question": "¿Qué característica incluye coexistencia e interoperabilidad?",
+          "options": [
+            "Fiabilidad",
+            "Seguridad",
+            "Usabilidad",
+            "Compatibilidad"
+          ],
+          "answer": 3,
+          "feedback": "Compatibilidad agrupa coexistencia e interoperabilidad."
+        },
+        {
+          "id": "l1-23",
+          "type": "choice",
+          "topic": "1.4 Calidad ISO 25000",
+          "sourcePage": 21,
+          "question": "¿Qué característica incluye disponibilidad, tolerancia a fallos y recuperación?",
+          "options": [
+            "Fiabilidad",
+            "Usabilidad",
+            "Adecuación funcional",
+            "Portabilidad"
+          ],
+          "answer": 0,
+          "feedback": "Son aspectos de la fiabilidad identificados en la presentación."
+        },
+        {
+          "id": "l1-24",
+          "type": "choice",
+          "topic": "1.4 Calidad ISO 25000",
+          "sourcePage": 22,
+          "question": "¿Qué característica incluye capacidad de aprendizaje y accesibilidad?",
+          "options": [
+            "Rendimiento",
+            "Mantenibilidad",
+            "Compatibilidad",
+            "Usabilidad"
+          ],
+          "answer": 3,
+          "feedback": "Usabilidad contempla facilidad de aprendizaje, uso y accesibilidad."
+        },
+        {
+          "id": "l1-25",
+          "type": "choice",
+          "topic": "1.4 Calidad ISO 25000",
+          "sourcePage": 22,
+          "question": "¿Qué característica considera confidencialidad, integridad y autenticidad?",
+          "options": [
+            "Seguridad",
+            "Rendimiento",
+            "Compatibilidad",
+            "Portabilidad"
+          ],
+          "answer": 0,
+          "feedback": "La presentación enumera esas subcaracterísticas dentro de seguridad."
+        },
+        {
+          "id": "l1-26",
+          "type": "choice",
+          "topic": "1.4 Calidad ISO 25000",
+          "sourcePage": 23,
+          "question": "¿Qué característica incluye modularidad y facilidad de modificación?",
+          "options": [
+            "Fiabilidad",
+            "Compatibilidad",
+            "Seguridad",
+            "Mantenibilidad"
+          ],
+          "answer": 3,
+          "feedback": "Mantenibilidad incluye modularidad, reusabilidad, analizabilidad, modificación y prueba."
+        },
+        {
+          "id": "l1-27",
+          "type": "choice",
+          "topic": "1.4 Calidad ISO 25000",
+          "sourcePage": 23,
+          "question": "¿Qué característica considera adaptación e instalación en otros entornos?",
+          "options": [
+            "Usabilidad",
+            "Portabilidad",
+            "Fiabilidad",
+            "Adecuación funcional"
+          ],
+          "answer": 1,
+          "feedback": "Portabilidad trata la adaptación, instalación y reemplazo entre entornos."
+        },
+        {
+          "id": "l1-28",
+          "type": "choice",
+          "topic": "1.5 Proceso de software",
+          "sourcePage": 24,
+          "question": "Un proceso de software es un conjunto estructurado de:",
+          "options": [
+            "Solo computadoras de un laboratorio",
+            "Solo lenguajes de programación",
+            "Repuestos del equipo físico",
+            "Actividades y resultados para crear un producto"
+          ],
+          "answer": 3,
+          "feedback": "La presentación define el proceso en términos de actividades y resultados asociados."
+        },
+        {
+          "id": "l1-29",
+          "type": "choice",
+          "topic": "1.5 Proceso de software",
+          "sourcePage": 25,
+          "question": "¿En qué etapa se definen funcionalidad y restricciones del sistema?",
+          "options": [
+            "Distribución comercial",
+            "Especificación de requisitos",
+            "Mantenimiento",
+            "Operación"
+          ],
+          "answer": 1,
+          "feedback": "La especificación identifica qué debe hacer el software y bajo qué restricciones."
+        },
+        {
+          "id": "l1-30",
+          "type": "choice",
+          "topic": "1.5 Proceso de software",
+          "sourcePage": 27,
+          "question": "¿Qué etapa convierte una especificación en un sistema ejecutable?",
+          "options": [
+            "Auditoría financiera",
+            "Diseño e implementación",
+            "Mercadotecnia",
+            "Retiro del hardware"
+          ],
+          "answer": 1,
+          "feedback": "Diseño e implementación producen el software conforme a la especificación."
+        },
+        {
+          "id": "l1-31",
+          "type": "choice",
+          "topic": "1.5 Proceso de software",
+          "sourcePage": 28,
+          "question": "¿Cuál es el propósito esencial de la validación?",
+          "options": [
+            "Comprar servidores",
+            "Elegir nombre comercial",
+            "Eliminar toda documentación",
+            "Asegurar que el software hace lo que el cliente desea"
+          ],
+          "answer": 3,
+          "feedback": "Validación comprueba correspondencia con necesidades del cliente."
+        },
+        {
+          "id": "l1-32",
+          "type": "choice",
+          "topic": "1.5 Proceso de software",
+          "sourcePage": 29,
+          "question": "¿Cuál etapa adapta el sistema a necesidades cambiantes del usuario?",
+          "options": [
+            "Solo diseño gráfico",
+            "Mantenimiento o evolución",
+            "Compras",
+            "Instalación de hardware"
+          ],
+          "answer": 1,
+          "feedback": "El mantenimiento/evolución cubre los cambios durante el periodo de vida del software."
+        },
+        {
+          "id": "l1-33",
+          "type": "choice",
+          "topic": "1.6 Herramientas",
+          "sourcePage": 30,
+          "question": "¿Qué significa CASE en el contexto de la presentación?",
+          "options": [
+            "Sistema de Ensamble de Cables",
+            "Ciclo Analógico de Sistemas Empresariales",
+            "Auditoría de Equipos de Cómputo",
+            "Ingeniería de Software Asistida por Computadora"
+          ],
+          "answer": 3,
+          "feedback": "CASE agrupa herramientas de apoyo automático y semiautomático al desarrollo."
+        },
+        {
+          "id": "l1-34",
+          "type": "choice",
+          "topic": "1.6 Herramientas",
+          "sourcePage": 34,
+          "question": "¿Qué herramienta se describe como sistema de control de versiones?",
+          "options": [
+            "Git",
+            "Jira",
+            "JUnit",
+            "Selenium"
+          ],
+          "answer": 0,
+          "feedback": "Git permite rastrear cambios en el código fuente."
+        },
+        {
+          "id": "l1-35",
+          "type": "choice",
+          "topic": "1.6 Herramientas",
+          "sourcePage": 35,
+          "question": "¿Qué herramienta se menciona para automatizar integración y entrega continua?",
+          "options": [
+            "Trello",
+            "DOORS",
+            "Jenkins",
+            "Swagger"
+          ],
+          "answer": 2,
+          "feedback": "Jenkins figura como herramienta CI/CD en las diapositivas."
+        },
+        {
+          "id": "l1-36",
+          "type": "choice",
+          "topic": "1.6 Herramientas",
+          "sourcePage": 37,
+          "question": "¿Qué herramienta de la presentación automatiza pruebas funcionales web?",
+          "options": [
+            "Git",
+            "SourceTree",
+            "Asana",
+            "Selenium"
+          ],
+          "answer": 3,
+          "feedback": "Selenium se menciona expresamente para automatizar pruebas web."
+        },
+        {
+          "id": "l1-37",
+          "type": "choice",
+          "topic": "1.6 Herramientas",
+          "sourcePage": 36,
+          "question": "¿Qué herramienta aparece para gestionar requisitos en proyectos complejos?",
+          "options": [
+            "pdb",
+            "CircleCI",
+            "GDB",
+            "IBM DOORS"
+          ],
+          "answer": 3,
+          "feedback": "IBM Engineering Requirements Management DOORS aparece como herramienta de requisitos."
+        },
+        {
+          "id": "l1-38",
+          "type": "choice",
+          "topic": "2.1 Definición de modelo",
+          "sourcePage": 3,
+          "question": "¿Qué es un modelo de proceso de software?",
+          "options": [
+            "Un plano de circuitos electrónicos",
+            "Una base de datos en producción",
+            "Representación abstracta de un proceso de software",
+            "Un lenguaje de programación"
+          ],
+          "answer": 2,
+          "feedback": "Los modelos representan un proceso desde una perspectiva y pueden adaptarse."
+        },
+        {
+          "id": "l1-39",
+          "type": "choice",
+          "topic": "2.2 Modelos tradicionales",
+          "sourcePage": 5,
+          "question": "¿Qué caracteriza a los modelos tradicionales descritos en la presentación?",
+          "options": [
+            "Requisitos definidos desde el inicio y poca flexibilidad",
+            "Ausencia de planificación",
+            "Cambios sin impacto ni control",
+            "Ningún orden de actividades"
+          ],
+          "answer": 0,
+          "feedback": "La presentación señala planificación rígida y requisitos iniciales."
+        },
+        {
+          "id": "l1-40",
+          "type": "choice",
+          "topic": "2.2 Cascada",
+          "sourcePage": 7,
+          "question": "¿Qué modelo plantea fases secuenciales que se completan antes de pasar a la siguiente?",
+          "options": [
+            "Cascada",
+            "Scrum",
+            "XP",
+            "Espiral"
+          ],
+          "answer": 0,
+          "feedback": "Cascada sigue una secuencia planificada de etapas."
+        },
+        {
+          "id": "l1-41",
+          "type": "choice",
+          "topic": "2.2 Cascada",
+          "sourcePage": 8,
+          "question": "¿Qué actividad sigue al diseño del sistema en el modelo en cascada mostrado?",
+          "options": [
+            "Despliegue comercial",
+            "Mantenimiento postventa",
+            "Análisis de mercado",
+            "Implementación y prueba de unidades"
+          ],
+          "answer": 3,
+          "feedback": "La secuencia incluye análisis, diseño, implementación y pruebas unitarias."
+        },
+        {
+          "id": "l1-42",
+          "type": "choice",
+          "topic": "2.2 Modelo en V",
+          "sourcePage": 11,
+          "question": "¿Qué aspecto destaca especialmente el modelo en V?",
+          "options": [
+            "Falta de verificaciones",
+            "Relación entre fases de desarrollo y actividades de prueba",
+            "Reutilización libre de componentes",
+            "Entrega diaria sin planificación"
+          ],
+          "answer": 1,
+          "feedback": "El modelo en V representa correspondencias entre desarrollo y pruebas."
+        },
+        {
+          "id": "l1-43",
+          "type": "choice",
+          "topic": "2.2 Modelo en V",
+          "sourcePage": 12,
+          "question": "¿Qué prueba se asocia con la validación de requisitos en el diagrama del modelo en V?",
+          "options": [
+            "Prueba de rendimiento del disco",
+            "Prueba de aceptación",
+            "Prueba de carga aislada",
+            "Prueba de compilador"
+          ],
+          "answer": 1,
+          "feedback": "El diagrama vincula requisitos y prueba de aceptación."
+        },
+        {
+          "id": "l1-44",
+          "type": "choice",
+          "topic": "2.3 Incremental",
+          "sourcePage": 15,
+          "question": "¿Qué se entrega normalmente al término de cada incremento?",
+          "options": [
+            "Una versión funcional del software",
+            "Un equipo físico",
+            "Solo un cronograma",
+            "Un contrato sin producto"
+          ],
+          "answer": 0,
+          "feedback": "Cada incremento aporta software operativo."
+        },
+        {
+          "id": "l1-45",
+          "type": "choice",
+          "topic": "2.3 Incremental",
+          "sourcePage": 17,
+          "question": "¿Qué suele contener el primer incremento?",
+          "options": [
+            "Solo manuales sin software",
+            "Funciones básicas esenciales",
+            "Todas las mejoras futuras",
+            "Exclusivamente estadísticas"
+          ],
+          "answer": 1,
+          "feedback": "El primer incremento suele ser un producto esencial con requisitos básicos."
+        },
+        {
+          "id": "l1-46",
+          "type": "choice",
+          "topic": "2.3 Incremental",
+          "sourcePage": 21,
+          "question": "¿Qué ventaja se atribuye al modelo incremental?",
+          "options": [
+            "Nunca existe riesgo",
+            "Elimina la comunicación con el usuario",
+            "Pruebas y depuración en partes menores",
+            "No requiere planificación"
+          ],
+          "answer": 2,
+          "feedback": "Las iteraciones pequeñas facilitan probar y depurar el software."
+        },
+        {
+          "id": "l1-47",
+          "type": "choice",
+          "topic": "2.3 DRA",
+          "sourcePage": 23,
+          "question": "¿Qué significa DRA?",
+          "options": [
+            "Desarrollo rápido de aplicaciones",
+            "Diseño rígido de arquitecturas",
+            "Documento de revisión automatizada",
+            "Despliegue remoto asistido"
+          ],
+          "answer": 0,
+          "feedback": "DRA es la abreviatura de desarrollo rápido de aplicaciones."
+        },
+        {
+          "id": "l1-48",
+          "type": "choice",
+          "topic": "2.3 DRA",
+          "sourcePage": 23,
+          "question": "¿Qué intervalo de duración indica la presentación para DRA?",
+          "options": [
+            "15 a 20 años",
+            "4 a 8 años",
+            "60 a 90 días",
+            "6 a 10 meses"
+          ],
+          "answer": 2,
+          "feedback": "Las diapositivas indican un proceso relativamente corto de 60 a 90 días."
+        },
+        {
+          "id": "l1-49",
+          "type": "choice",
+          "topic": "2.3 DRA",
+          "sourcePage": 24,
+          "question": "¿Qué actividad pertenece a las etapas de DRA?",
+          "options": [
+            "Modelado de datos",
+            "Producción de microchips",
+            "Compra de impresoras",
+            "Clasificación de computadoras físicas"
+          ],
+          "answer": 0,
+          "feedback": "DRA incluye modelado de gestión, datos, procesos, generación y pruebas/entrega."
+        },
+        {
+          "id": "l1-50",
+          "type": "choice",
+          "topic": "2.4 Evolutivos",
+          "sourcePage": 29,
+          "question": "¿Qué define al enfoque evolutivo?",
+          "options": [
+            "Entregar solo diagramas finales",
+            "Evitar validar el sistema",
+            "Refinar versiones con retroalimentación del cliente",
+            "Impedir cambios tras el primer requisito"
+          ],
+          "answer": 2,
+          "feedback": "El sistema inicial evoluciona mediante comentarios y refinamientos."
+        },
+        {
+          "id": "l1-51",
+          "type": "choice",
+          "topic": "2.4 Evolutivos",
+          "sourcePage": 31,
+          "question": "En el desarrollo exploratorio, ¿cómo se desarrolla el sistema?",
+          "options": [
+            "Se elimina la fase de desarrollo",
+            "Se parte de las partes comprendidas y se agregan atributos",
+            "Se sustituyen todos los requisitos por diagramas eléctricos",
+            "Se construye sin consultar al cliente"
+          ],
+          "answer": 1,
+          "feedback": "La presentación describe explorar requisitos con el cliente a partir de lo conocido."
+        },
+        {
+          "id": "l1-52",
+          "type": "choice",
+          "topic": "2.4 Prototipos",
+          "sourcePage": 35,
+          "question": "¿Qué ayuda a comprender un prototipo en este modelo?",
+          "options": [
+            "Precio de licencias exclusivamente",
+            "Requisitos del usuario",
+            "Estado físico de la impresora",
+            "Características eléctricas del procesador"
+          ],
+          "answer": 1,
+          "feedback": "El prototipo favorece la comprensión y el refinamiento de requisitos."
+        },
+        {
+          "id": "l1-53",
+          "type": "choice",
+          "topic": "2.4 Prototipos",
+          "sourcePage": 36,
+          "question": "¿Qué hace el cliente con el prototipo en la presentación?",
+          "options": [
+            "Lo usa exclusivamente para facturación",
+            "Evita observarlo",
+            "Lo reemplaza por hardware",
+            "Lo evalúa y proporciona retroalimentación"
+          ],
+          "answer": 3,
+          "feedback": "El cliente evalúa el prototipo y ayuda a ajustar requisitos."
+        },
+        {
+          "id": "l1-54",
+          "type": "choice",
+          "topic": "2.4 Espiral",
+          "sourcePage": 40,
+          "question": "¿Quién propuso originalmente el modelo espiral según las diapositivas?",
+          "options": [
+            "Ken Schwaber",
+            "Barry Boehm",
+            "Kent Beck",
+            "Alan Davis"
+          ],
+          "answer": 1,
+          "feedback": "La presentación cita a Boehm (1988)."
+        },
+        {
+          "id": "l1-55",
+          "type": "choice",
+          "topic": "2.4 Espiral",
+          "sourcePage": 41,
+          "question": "¿Qué aspecto es central en el modelo espiral?",
+          "options": [
+            "Eliminar validaciones",
+            "Requisitos imposibles de modificar",
+            "Identificación y reducción de riesgos",
+            "Ausencia de estimaciones"
+          ],
+          "answer": 2,
+          "feedback": "En cada ciclo se analizan y reducen riesgos."
+        },
+        {
+          "id": "l1-56",
+          "type": "choice",
+          "topic": "2.4 Concurrente",
+          "sourcePage": 45,
+          "question": "¿Qué caracteriza el desarrollo concurrente?",
+          "options": [
+            "Prohibición de trabajar en equipo",
+            "Ausencia completa de comunicación",
+            "Actividades que pueden existir a la vez en estados distintos",
+            "Una sola actividad activa por proyecto"
+          ],
+          "answer": 2,
+          "feedback": "Modela actividades simultáneas en diferentes estados."
+        },
+        {
+          "id": "l1-57",
+          "type": "choice",
+          "topic": "2.5 Proceso unificado",
+          "sourcePage": 51,
+          "question": "¿Cuál conjunto describe al proceso unificado presentado?",
+          "options": [
+            "Dirigido por casos de uso, arquitectura, iterativo e incremental",
+            "Sin arquitectura ni pruebas",
+            "Solo diseño de bases de datos",
+            "Exclusivamente secuencial y sin casos de uso"
+          ],
+          "answer": 0,
+          "feedback": "RUP es dirigido por casos de uso, centrado en arquitectura, iterativo e incremental."
+        },
+        {
+          "id": "l1-58",
+          "type": "choice",
+          "topic": "2.5 Proceso unificado",
+          "sourcePage": 51,
+          "question": "¿Qué lenguaje de modelado utiliza RUP según las diapositivas?",
+          "options": [
+            "SQL",
+            "CSS",
+            "UML",
+            "HTML"
+          ],
+          "answer": 2,
+          "feedback": "La presentación dice que RUP utiliza UML para definir modelos del sistema."
+        },
+        {
+          "id": "l1-59",
+          "type": "choice",
+          "topic": "2.5 Proceso unificado",
+          "sourcePage": 55,
+          "question": "¿Cuál es una fase de RUP?",
+          "options": [
+            "Fabricación física",
+            "Licitación",
+            "Compra de licencias",
+            "Elaboración"
+          ],
+          "answer": 3,
+          "feedback": "Sus fases son inicio, elaboración, construcción y transición."
+        },
+        {
+          "id": "l1-60",
+          "type": "choice",
+          "topic": "2.5 Proceso unificado",
+          "sourcePage": 57,
+          "question": "¿Qué trabajo caracteriza la fase de elaboración en RUP?",
+          "options": [
+            "Desechar los requisitos",
+            "Cerrar la operación antes del diseño",
+            "Desactivar pruebas finales",
+            "Definir arquitectura y riesgos clave"
+          ],
+          "answer": 3,
+          "feedback": "Elaboración profundiza dominio, arquitectura, planificación y riesgos."
+        },
+        {
+          "id": "l1-61",
+          "type": "choice",
+          "topic": "2.5 Proceso unificado",
+          "sourcePage": 59,
+          "question": "¿Qué ocurre en la fase de transición de RUP?",
+          "options": [
+            "Se cancela el caso de negocio siempre",
+            "Se prohíbe instalar el software",
+            "El sistema pasa al entorno real de los usuarios",
+            "Se construye solo el prototipo inicial"
+          ],
+          "answer": 2,
+          "feedback": "La transición lleva el producto de desarrollo al uso real."
+        },
+        {
+          "id": "l1-62",
+          "type": "choice",
+          "topic": "2.6 Modelos ágiles",
+          "sourcePage": 65,
+          "question": "¿En qué año sitúa la presentación el origen del Manifiesto Ágil?",
+          "options": [
+            "2001",
+            "1988",
+            "2018",
+            "1970"
+          ],
+          "answer": 0,
+          "feedback": "La presentación señala febrero de 2001."
+        },
+        {
+          "id": "l1-63",
+          "type": "choice",
+          "topic": "2.6 Modelos ágiles",
+          "sourcePage": 67,
+          "question": "¿Qué valora el Manifiesto Ágil por encima de procesos y herramientas?",
+          "options": [
+            "Únicamente contratos",
+            "Más trámites de autorización",
+            "Individuos e interacciones",
+            "El tamaño de los equipos"
+          ],
+          "answer": 2,
+          "feedback": "Uno de sus valores prioriza personas e interacciones."
+        },
+        {
+          "id": "l1-64",
+          "type": "choice",
+          "topic": "2.6 Modelos ágiles",
+          "sourcePage": 68,
+          "question": "¿Qué valora el Manifiesto Ágil por encima de seguir estrictamente un plan?",
+          "options": [
+            "Mantener requisitos inmutables",
+            "Responder al cambio",
+            "Evitar hablar con el cliente",
+            "Eliminar las entregas"
+          ],
+          "answer": 1,
+          "feedback": "Responder al cambio es uno de los cuatro valores ágiles."
+        },
+        {
+          "id": "l1-65",
+          "type": "choice",
+          "topic": "2.6 Modelos ágiles",
+          "sourcePage": 70,
+          "question": "Según los principios ágiles, ¿cuál es la medida principal de progreso?",
+          "options": [
+            "Cantidad de herramientas instaladas",
+            "Software que funciona",
+            "Número de reuniones",
+            "Tamaño del contrato"
+          ],
+          "answer": 1,
+          "feedback": "El principio VII señala software funcionando como medida de progreso."
+        },
+        {
+          "id": "l1-66",
+          "type": "choice",
+          "topic": "2.6 XP",
+          "sourcePage": 73,
+          "question": "¿Qué significan las siglas XP en la presentación?",
+          "options": [
+            "Prueba exploratoria",
+            "Proyecto expandido",
+            "Programación extrema",
+            "Proceso exclusivo"
+          ],
+          "answer": 2,
+          "feedback": "XP significa Extreme Programming o programación extrema."
+        },
+        {
+          "id": "l1-67",
+          "type": "choice",
+          "topic": "2.6 XP",
+          "sourcePage": 75,
+          "question": "¿Qué técnica de XP expresa brevemente necesidades del cliente?",
+          "options": [
+            "Órdenes de compra",
+            "Historias de usuario",
+            "Mapas de hardware",
+            "Diagramas de cableado"
+          ],
+          "answer": 1,
+          "feedback": "Las historias de usuario recogen brevemente requisitos del sistema."
+        },
+        {
+          "id": "l1-68",
+          "type": "choice",
+          "topic": "2.6 XP",
+          "sourcePage": 76,
+          "question": "¿Quién prioriza las historias de usuario según los roles de XP expuestos?",
+          "options": [
+            "Cliente",
+            "Proveedor del equipo",
+            "Administrador de red",
+            "Depurador automático"
+          ],
+          "answer": 0,
+          "feedback": "La presentación atribuye al cliente prioridades y decisiones sobre iteraciones."
+        },
+        {
+          "id": "l1-69",
+          "type": "choice",
+          "topic": "2.6 XP",
+          "sourcePage": 85,
+          "question": "¿Qué práctica mejora la estructura del código sin cambiar su comportamiento externo?",
+          "options": [
+            "Suspensión de pruebas",
+            "Refactorización",
+            "Reemplazo del hardware",
+            "Duplicación del código"
+          ],
+          "answer": 1,
+          "feedback": "La refactorización mejora internamente el código sin modificar su funcionalidad externa."
+        },
+        {
+          "id": "l1-70",
+          "type": "choice",
+          "topic": "2.6 XP",
+          "sourcePage": 86,
+          "question": "¿Qué práctica consiste en que dos personas trabajen juntas sobre el código?",
+          "options": [
+            "Auditoría de compra",
+            "Programación en parejas",
+            "Espiral de negocio",
+            "Modelo en cascada"
+          ],
+          "answer": 1,
+          "feedback": "La programación en parejas es una práctica de XP."
+        },
+        {
+          "id": "l1-71",
+          "type": "choice",
+          "topic": "2.6 XP",
+          "sourcePage": 86,
+          "question": "¿Qué práctica integra nuevas piezas de código varias veces cuando están listas?",
+          "options": [
+            "Retrasar la compilación",
+            "Pruebas solo al final",
+            "Diseño físico",
+            "Integración continua"
+          ],
+          "answer": 3,
+          "feedback": "XP describe integración continua del código."
+        },
+        {
+          "id": "l1-72",
+          "type": "choice",
+          "topic": "2.6 DSDM",
+          "sourcePage": 88,
+          "question": "¿Qué significan las siglas DSDM?",
+          "options": [
+            "Modelo de diseño secuencial definitivo",
+            "Diseño del sistema de memoria",
+            "Método de desarrollo de sistemas dinámicos",
+            "Documento de seguridad de datos móviles"
+          ],
+          "answer": 2,
+          "feedback": "DSDM es Dynamic Systems Development Method."
+        },
+        {
+          "id": "l1-73",
+          "type": "choice",
+          "topic": "2.6 DSDM",
+          "sourcePage": 90,
+          "question": "¿Qué práctica de DSDM organiza trabajo con plazos delimitados?",
+          "options": [
+            "Eliminación de calendarios",
+            "Timeboxing",
+            "Congelación de pruebas",
+            "Trabajo sin colaboración"
+          ],
+          "answer": 1,
+          "feedback": "DSDM destaca entregar a tiempo y el trabajo en timeboxes."
+        },
+        {
+          "id": "l1-74",
+          "type": "choice",
+          "topic": "2.6 DSDM",
+          "sourcePage": 91,
+          "question": "¿Cuál principio aparece explícitamente entre los de DSDM?",
+          "options": [
+            "Eliminar a los usuarios",
+            "Evitar toda revisión",
+            "Nunca comprometer la calidad",
+            "Posponer la comunicación"
+          ],
+          "answer": 2,
+          "feedback": "Nunca comprometer la calidad es un principio indicado."
+        },
+        {
+          "id": "l1-75",
+          "type": "choice",
+          "topic": "2.6 Scrum",
+          "sourcePage": 102,
+          "question": "¿Cómo se llama el periodo de trabajo delimitado en Scrum?",
+          "options": [
+            "Unidad física",
+            "Etapa de compilador",
+            "Sprint",
+            "Ciclo de adquisición"
+          ],
+          "answer": 2,
+          "feedback": "Un sprint es un periodo de trabajo orientado a un incremento."
+        },
+        {
+          "id": "l1-76",
+          "type": "choice",
+          "topic": "2.6 Scrum",
+          "sourcePage": 103,
+          "question": "¿Cuál artefacto reúne y prioriza trabajo pendiente del producto?",
+          "options": [
+            "Product Backlog",
+            "Diagrama de red",
+            "Reporte de compra",
+            "Contrato de mantenimiento"
+          ],
+          "answer": 0,
+          "feedback": "Product Backlog es la lista dinámica del trabajo del producto."
+        },
+        {
+          "id": "l1-77",
+          "type": "choice",
+          "topic": "2.6 Scrum",
+          "sourcePage": 103,
+          "question": "¿Cuál artefacto registra el trabajo elegido para el sprint actual?",
+          "options": [
+            "Acta de instalación eléctrica",
+            "Sprint Backlog",
+            "Inventario de computadoras",
+            "Manual de contratos"
+          ],
+          "answer": 1,
+          "feedback": "Sprint Backlog contiene el trabajo seleccionado para el sprint."
+        },
+        {
+          "id": "l1-78",
+          "type": "choice",
+          "topic": "2.6 Scrum",
+          "sourcePage": 104,
+          "question": "¿Qué rol ordena las necesidades del producto para maximizar su valor?",
+          "options": [
+            "Product Owner",
+            "Vendedor de licencias",
+            "Auditor físico",
+            "Operador de impresora"
+          ],
+          "answer": 0,
+          "feedback": "El propietario del producto prioriza necesidades para maximizar valor."
+        },
+        {
+          "id": "l1-79",
+          "type": "choice",
+          "topic": "2.6 Scrum",
+          "sourcePage": 108,
+          "question": "¿Qué evento permite inspeccionar el resultado del sprint con partes interesadas?",
+          "options": [
+            "Apertura de tickets de compra",
+            "Revisión del Sprint",
+            "Instalación de red",
+            "Cierre contable"
+          ],
+          "answer": 1,
+          "feedback": "La revisión examina el incremento y recoge retroalimentación."
+        },
+        {
+          "id": "l1-80",
+          "type": "choice",
+          "topic": "2.6 Scrum",
+          "sourcePage": 108,
+          "question": "¿Qué evento permite analizar qué funcionó y qué mejorar en el siguiente sprint?",
+          "options": [
+            "Negociación comercial de hardware",
+            "Retrospectiva del Sprint",
+            "Diseño de placa base",
+            "Montaje de servidores"
+          ],
+          "answer": 1,
+          "feedback": "La retrospectiva identifica mejoras al modo de trabajo."
+        },
+        {
+          "id": "l1-81",
+          "type": "choice",
+          "topic": "2.7 Modelos formales",
+          "sourcePage": 109,
+          "question": "¿Qué distingue a los métodos formales?",
+          "options": [
+            "Uso de notaciones y razonamientos matemáticamente rigurosos",
+            "Trabajo basado solo en intuición",
+            "Evitar especificaciones",
+            "Entrega sin verificación"
+          ],
+          "answer": 0,
+          "feedback": "Los métodos formales se basan en especificación y verificación con rigor matemático."
+        },
+        {
+          "id": "l1-82",
+          "type": "choice",
+          "topic": "2.7 Modelos formales",
+          "sourcePage": 115,
+          "question": "¿En qué proyectos suelen ser especialmente valiosos los métodos formales?",
+          "options": [
+            "Sistemas críticos donde los fallos tienen alto costo",
+            "Proyectos sin restricciones",
+            "Únicamente prototipos desechables",
+            "Solo páginas publicitarias básicas"
+          ],
+          "answer": 0,
+          "feedback": "La presentación destaca sistemas críticos de alta seguridad y fiabilidad."
+        },
+        {
+          "id": "l1-83",
+          "type": "choice",
+          "topic": "2.7 Modelos formales",
+          "sourcePage": 118,
+          "question": "¿Qué formalismo permite representar eventos concurrentes mediante lugares, marcas y transiciones?",
+          "options": [
+            "Tablas de tareas",
+            "Historias de usuario",
+            "Redes de Petri",
+            "Diagramas de Gantt"
+          ],
+          "answer": 2,
+          "feedback": "Las redes de Petri modelan concurrencia con lugares, marcas y transiciones."
+        }
+      ]
+    },
+    "2": {
+      "name": "Intermedio",
+      "subtitle": "Verdadero/falso, selección y respuestas breves",
+      "questions": [
+        {
+          "id": "l2-tf-1",
+          "type": "tf",
+          "topic": "1.1",
+          "sourcePage": 3,
+          "question": "La definición del IEEE incluye desarrollo, operación y mantenimiento del software.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 0,
+          "feedback": "La lámina 3 incluye los tres aspectos."
+        },
+        {
+          "id": "l2-tf-2",
+          "type": "tf",
+          "topic": "1.2",
+          "sourcePage": 7,
+          "question": "Durante los primeros años de la informática, la programación se caracterizaba por metodologías rigurosamente planificadas.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 1,
+          "feedback": "La presentación dice que se programaba con poca o ninguna planificación metodológica."
+        },
+        {
+          "id": "l2-tf-3",
+          "type": "tf",
+          "topic": "1.2",
+          "sourcePage": 13,
+          "question": "La ingeniería de sistemas incluye tanto hardware como software y aspectos del sistema completo.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 0,
+          "feedback": "La comparación de disciplinas en la lámina 13 lo indica."
+        },
+        {
+          "id": "l2-tf-4",
+          "type": "tf",
+          "topic": "1.3",
+          "sourcePage": 17,
+          "question": "Un programa no puede presentar fallos porque el software no se desgasta físicamente.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 1,
+          "feedback": "Que no se desgaste no impide fallos originados en diseño o código."
+        },
+        {
+          "id": "l2-tf-5",
+          "type": "tf",
+          "topic": "1.4",
+          "sourcePage": 21,
+          "question": "La interoperabilidad se presenta como una subcaracterística de compatibilidad.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 0,
+          "feedback": "Compatibilidad incluye coexistencia e interoperabilidad."
+        },
+        {
+          "id": "l2-tf-6",
+          "type": "tf",
+          "topic": "1.4",
+          "sourcePage": 22,
+          "question": "La accesibilidad se clasifica en la presentación dentro de la portabilidad.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 1,
+          "feedback": "La accesibilidad está presentada dentro de usabilidad."
+        },
+        {
+          "id": "l2-tf-7",
+          "type": "tf",
+          "topic": "1.4",
+          "sourcePage": 23,
+          "question": "La capacidad para ser probado aparece en el grupo de mantenibilidad.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 0,
+          "feedback": "La lámina 23 incluye capacidad para ser probado."
+        },
+        {
+          "id": "l2-tf-8",
+          "type": "tf",
+          "topic": "1.5",
+          "sourcePage": 24,
+          "question": "La presentación sostiene que un único proceso de software es ideal para cualquier tipo de sistema.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 1,
+          "feedback": "Afirma que no existe un proceso ideal y que depende del contexto."
+        },
+        {
+          "id": "l2-tf-9",
+          "type": "tf",
+          "topic": "1.5",
+          "sourcePage": 28,
+          "question": "La validación incluye pruebas de componentes, de sistema y de aceptación.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 0,
+          "feedback": "La presentación enumera esas etapas de prueba."
+        },
+        {
+          "id": "l2-tf-10",
+          "type": "tf",
+          "topic": "1.6",
+          "sourcePage": 30,
+          "question": "Las herramientas CASE se utilizan exclusivamente después de entregar el software.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 1,
+          "feedback": "Pueden apoyar diversas fases del desarrollo y mantenimiento."
+        },
+        {
+          "id": "l2-tf-11",
+          "type": "tf",
+          "topic": "2.1",
+          "sourcePage": 3,
+          "question": "Los modelos de proceso son representaciones parciales que pueden adaptarse.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 0,
+          "feedback": "La lámina 3 recalca carácter abstracto y adaptable."
+        },
+        {
+          "id": "l2-tf-12",
+          "type": "tf",
+          "topic": "2.2",
+          "sourcePage": 14,
+          "question": "El modelo en V presentado se caracteriza por facilitar retornos frecuentes a cualquier fase anterior.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 1,
+          "feedback": "Las desventajas en la lámina 14 señalan dificultad de regresar."
+        },
+        {
+          "id": "l2-tf-13",
+          "type": "tf",
+          "topic": "2.3",
+          "sourcePage": 17,
+          "question": "El modelo incremental puede entregar versiones útiles antes del producto completo.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 0,
+          "feedback": "Los primeros incrementos contienen funcionalidades operativas."
+        },
+        {
+          "id": "l2-tf-14",
+          "type": "tf",
+          "topic": "2.3",
+          "sourcePage": 28,
+          "question": "DRA evita la participación comprometida de los usuarios.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 1,
+          "feedback": "La falta de compromiso de clientes y desarrolladores es una desventaja señalada."
+        },
+        {
+          "id": "l2-tf-15",
+          "type": "tf",
+          "topic": "2.4",
+          "sourcePage": 30,
+          "question": "En el desarrollo evolutivo se entrelazan especificación, desarrollo y validación.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 0,
+          "feedback": "La lámina 30 describe retroalimentación rápida entre actividades."
+        },
+        {
+          "id": "l2-tf-16",
+          "type": "tf",
+          "topic": "2.4",
+          "sourcePage": 31,
+          "question": "Los prototipos desechables buscan principalmente comprender requisitos poco claros.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 0,
+          "feedback": "Se emplean para explorar requisitos incompletamente comprendidos."
+        },
+        {
+          "id": "l2-tf-17",
+          "type": "tf",
+          "topic": "2.4",
+          "sourcePage": 41,
+          "question": "En espiral, la evaluación de riesgos se omite en cada ciclo.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 1,
+          "feedback": "La evaluación y reducción de riesgos es un sector fundamental."
+        },
+        {
+          "id": "l2-tf-18",
+          "type": "tf",
+          "topic": "2.4",
+          "sourcePage": 46,
+          "question": "En desarrollo concurrente, varias actividades pueden existir simultáneamente en distintos estados.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 0,
+          "feedback": "La lámina 46 describe actividades concurrentes con estados diferentes."
+        },
+        {
+          "id": "l2-tf-19",
+          "type": "tf",
+          "topic": "2.5",
+          "sourcePage": 55,
+          "question": "Las cuatro fases de RUP son análisis, diseño, codificación y entrega.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 1,
+          "feedback": "Las fases enumeradas son inicio, elaboración, construcción y transición."
+        },
+        {
+          "id": "l2-tf-20",
+          "type": "tf",
+          "topic": "2.5",
+          "sourcePage": 62,
+          "question": "RUP propone verificar continuamente la calidad y administrar cambios.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 0,
+          "feedback": "Son dos de las seis mejores prácticas de RUP."
+        },
+        {
+          "id": "l2-tf-21",
+          "type": "tf",
+          "topic": "2.6",
+          "sourcePage": 67,
+          "question": "El Manifiesto Ágil valora la documentación exhaustiva por encima del software que funciona.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 1,
+          "feedback": "Prioriza software funcionando sobre documentación exhaustiva."
+        },
+        {
+          "id": "l2-tf-22",
+          "type": "tf",
+          "topic": "2.6",
+          "sourcePage": 76,
+          "question": "En la presentación de XP, el cliente asigna prioridades a historias de usuario.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 0,
+          "feedback": "La descripción del rol de cliente le atribuye esa tarea."
+        },
+        {
+          "id": "l2-tf-23",
+          "type": "tf",
+          "topic": "2.6",
+          "sourcePage": 86,
+          "question": "Programación en parejas e integración continua se presentan como prácticas de XP.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 0,
+          "feedback": "Ambas se enumeran en la lámina 86."
+        },
+        {
+          "id": "l2-tf-24",
+          "type": "tf",
+          "topic": "2.6",
+          "sourcePage": 91,
+          "question": "DSDM recomienda sacrificar la calidad para entregar antes de la fecha prevista.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 1,
+          "feedback": "Una de sus normas explícitas es nunca comprometer la calidad."
+        },
+        {
+          "id": "l2-tf-25",
+          "type": "tf",
+          "topic": "2.6",
+          "sourcePage": 103,
+          "question": "Product Backlog y Sprint Backlog representan exactamente la misma lista de trabajo.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 1,
+          "feedback": "El primero cubre trabajo general del producto; el segundo el trabajo seleccionado para el sprint."
+        },
+        {
+          "id": "l2-tf-26",
+          "type": "tf",
+          "topic": "2.6",
+          "sourcePage": 108,
+          "question": "La revisión de sprint y la retrospectiva tienen objetivos diferentes.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 0,
+          "feedback": "Revisión inspecciona trabajo; retrospectiva mejora proceso del equipo."
+        },
+        {
+          "id": "l2-tf-27",
+          "type": "tf",
+          "topic": "2.7",
+          "sourcePage": 115,
+          "question": "Los métodos formales son especialmente relevantes cuando una falla puede tener consecuencias graves.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 0,
+          "feedback": "La presentación describe su uso en sistemas críticos."
+        },
+        {
+          "id": "l2-tf-28",
+          "type": "tf",
+          "topic": "2.7",
+          "sourcePage": 117,
+          "question": "Las especificaciones algebraicas describen tipos y operaciones mediante axiomas o ecuaciones.",
+          "options": [
+            "Verdadero",
+            "Falso"
+          ],
+          "answer": 0,
+          "feedback": "Así define la presentación este tipo de especificación."
+        },
+        {
+          "id": "l2-mc-1",
+          "type": "choice",
+          "topic": "1.2",
+          "sourcePage": 13,
+          "question": "¿Qué comparación refleja mejor ciencias de la computación e ingeniería de software?",
+          "options": [
+            "Ambas se limitan a gestionar presupuestos",
+            "La primera enfatiza fundamentos y la segunda aplicación práctica",
+            "La primera crea solo hardware y la segunda solo redes",
+            "Ninguna estudia programas"
+          ],
+          "answer": 1,
+          "feedback": "La presentación diferencia teoría y fundamentos frente a aspectos prácticos."
+        },
+        {
+          "id": "l2-mc-2",
+          "type": "choice",
+          "topic": "1.3",
+          "sourcePage": 17,
+          "question": "Al encontrar una falla en un programa, ¿qué explicación coincide con la presentación?",
+          "options": [
+            "Hay desgaste físico de sus instrucciones",
+            "Se debe reemplazar una pieza mecánica",
+            "Puede existir un defecto en diseño o traducción a código",
+            "Los defectos desaparecen al reiniciar el dispositivo"
+          ],
+          "answer": 2,
+          "feedback": "La lámina 17 relaciona fallas con errores de diseño o implementación."
+        },
+        {
+          "id": "l2-mc-3",
+          "type": "choice",
+          "topic": "1.4",
+          "sourcePage": 20,
+          "question": "Un sistema cumple todas las funciones solicitadas. ¿Qué subcaracterística se relaciona más directamente?",
+          "options": [
+            "Completitud funcional",
+            "Portabilidad",
+            "Coexistencia",
+            "Autenticidad"
+          ],
+          "answer": 0,
+          "feedback": "La completitud comprueba cobertura de funciones especificadas."
+        },
+        {
+          "id": "l2-mc-4",
+          "type": "choice",
+          "topic": "1.4",
+          "sourcePage": 22,
+          "question": "Un usuario aprende fácilmente a usar una aplicación. ¿Qué característica es la más directa?",
+          "options": [
+            "Fiabilidad",
+            "Usabilidad",
+            "Mantenibilidad",
+            "Seguridad"
+          ],
+          "answer": 1,
+          "feedback": "Usabilidad incluye capacidad de aprendizaje."
+        },
+        {
+          "id": "l2-mc-5",
+          "type": "choice",
+          "topic": "1.5",
+          "sourcePage": 24,
+          "question": "Requisitos cambian semanalmente. ¿Qué tipo de proceso podría ser más eficaz según la diapositiva?",
+          "options": [
+            "Flexible y ágil",
+            "Rígido independientemente del contexto",
+            "Solo de fabricación",
+            "Sin interacción del usuario"
+          ],
+          "answer": 0,
+          "feedback": "La lámina 24 contrasta sistemas críticos con negocios de requisitos cambiantes."
+        },
+        {
+          "id": "l2-mc-6",
+          "type": "choice",
+          "topic": "1.6",
+          "sourcePage": 31,
+          "question": "¿Qué asociación herramienta-función coincide con la presentación?",
+          "options": [
+            "Jenkins: modelado de bases de datos",
+            "Git: pruebas de aceptación del cliente",
+            "Depurador: localizar fallos del programa",
+            "Swagger: gestión de redes físicas"
+          ],
+          "answer": 2,
+          "feedback": "Los depuradores ayudan a encontrar errores de ejecución."
+        },
+        {
+          "id": "l2-mc-7",
+          "type": "choice",
+          "topic": "2.2",
+          "sourcePage": 12,
+          "question": "En el modelo en V, ¿qué actividad se vincula con codificación?",
+          "options": [
+            "Pruebas unitarias",
+            "Pruebas de aceptación",
+            "Negociación comercial",
+            "Planificación de adquisición"
+          ],
+          "answer": 0,
+          "feedback": "El diagrama sitúa codificación frente a pruebas unitarias."
+        },
+        {
+          "id": "l2-mc-8",
+          "type": "choice",
+          "topic": "2.3",
+          "sourcePage": 15,
+          "question": "¿Cuál es la diferencia más clara entre cascada e incremental?",
+          "options": [
+            "Cascada y incremental entregan ambos solo documentación",
+            "Incremental añade funcionalidad en sucesivas entregas",
+            "Cascada depende de timeboxes ágiles",
+            "Incremental prohíbe el diseño previo"
+          ],
+          "answer": 1,
+          "feedback": "Los incrementos producen nuevas funcionalidades y entregas operativas."
+        },
+        {
+          "id": "l2-mc-9",
+          "type": "choice",
+          "topic": "2.3",
+          "sourcePage": 24,
+          "question": "En DRA, ¿en cuál etapa se identifican almacenes y relaciones de datos?",
+          "options": [
+            "Generación de aplicaciones",
+            "Pruebas y entrega",
+            "Modelado de datos",
+            "Modelado de gestión"
+          ],
+          "answer": 2,
+          "feedback": "Modelado de datos identifica almacenes y vínculos."
+        },
+        {
+          "id": "l2-mc-10",
+          "type": "choice",
+          "topic": "2.4",
+          "sourcePage": 31,
+          "question": "¿Qué diferencia desarrollo exploratorio de prototipado desechable en las láminas?",
+          "options": [
+            "Exploratorio desarrolla sistema final; desechable comprende requisitos",
+            "Exploratorio prescinde del cliente; desechable prescinde de pruebas",
+            "Ambos son métodos matemáticos",
+            "Ambos exigen congelar requisitos"
+          ],
+          "answer": 0,
+          "feedback": "La primera alternativa corresponde a sus fines descritos."
+        },
+        {
+          "id": "l2-mc-11",
+          "type": "choice",
+          "topic": "2.4",
+          "sourcePage": 41,
+          "question": "¿Qué acción es más representativa de un ciclo del modelo espiral?",
+          "options": [
+            "Ignorar incertidumbres",
+            "Evaluar alternativas y reducir riesgos",
+            "Desplegar sin validar",
+            "Omitir plan del siguiente ciclo"
+          ],
+          "answer": 1,
+          "feedback": "La reducción de riesgos es central en sus cuatro sectores."
+        },
+        {
+          "id": "l2-mc-12",
+          "type": "choice",
+          "topic": "2.5",
+          "sourcePage": 56,
+          "question": "En RUP, ¿qué describe mejor la fase de inicio?",
+          "options": [
+            "Construcción completa de módulos",
+            "Traslado del sistema a producción",
+            "Justificación y caso de negocio",
+            "Optimización posterior al cierre"
+          ],
+          "answer": 2,
+          "feedback": "Inicio evalúa el caso de negocio y los actores externos."
+        },
+        {
+          "id": "l2-mc-13",
+          "type": "choice",
+          "topic": "2.5",
+          "sourcePage": 58,
+          "question": "La programación, integración y pruebas del sistema corresponden principalmente a:",
+          "options": [
+            "Construcción de RUP",
+            "Inicio de RUP",
+            "Planificación de Scrum",
+            "Factibilidad de DSDM"
+          ],
+          "answer": 0,
+          "feedback": "La lámina 58 ubica dichas tareas en construcción."
+        },
+        {
+          "id": "l2-mc-14",
+          "type": "choice",
+          "topic": "2.6",
+          "sourcePage": 68,
+          "question": "Un cliente modifica una prioridad por una nueva necesidad. ¿Qué valor ágil se ilustra mejor?",
+          "options": [
+            "Responder al cambio",
+            "Evitar iteraciones",
+            "Preferir contrato sobre colaboración",
+            "Medir avance por documentación"
+          ],
+          "answer": 0,
+          "feedback": "La adaptación a cambios es uno de los cuatro valores."
+        },
+        {
+          "id": "l2-mc-15",
+          "type": "choice",
+          "topic": "2.6",
+          "sourcePage": 75,
+          "question": "¿Qué técnica de XP es más adecuada para captar una necesidad de forma breve desde el usuario?",
+          "options": [
+            "Plan de capacitación",
+            "Historia de usuario",
+            "Diagrama de hardware",
+            "Registro de red"
+          ],
+          "answer": 1,
+          "feedback": "El cliente describe requerimientos mediante historias de usuario."
+        },
+        {
+          "id": "l2-mc-16",
+          "type": "choice",
+          "topic": "2.6",
+          "sourcePage": 92,
+          "question": "Tras una entrega parcial, el equipo DSDM incorpora comentarios y ajusta su siguiente versión. ¿Qué principio aplica?",
+          "options": [
+            "Desarrollar iterativamente",
+            "Evitar retroalimentación",
+            "Suspender la comunicación",
+            "Aplazar las pruebas finales"
+          ],
+          "answer": 0,
+          "feedback": "Iteración y comentarios son centrales en DSDM."
+        },
+        {
+          "id": "l2-mc-17",
+          "type": "choice",
+          "topic": "2.6",
+          "sourcePage": 103,
+          "question": "Si el equipo selecciona tareas concretas para su sprint, ¿dónde las registra?",
+          "options": [
+            "Product Backlog exclusivamente",
+            "Sprint Backlog",
+            "Documento de requisitos del hardware",
+            "Registro de contratos"
+          ],
+          "answer": 1,
+          "feedback": "Sprint Backlog refleja el trabajo del sprint actual."
+        },
+        {
+          "id": "l2-mc-18",
+          "type": "choice",
+          "topic": "2.7",
+          "sourcePage": 118,
+          "question": "¿Qué método formal modela eventos simultáneos con marcas y transiciones?",
+          "options": [
+            "Pruebas de interfaz",
+            "Redes de Petri",
+            "Historias de usuario",
+            "Scrum"
+          ],
+          "answer": 1,
+          "feedback": "La descripción de Redes de Petri usa lugares, marcas y transiciones."
+        },
+        {
+          "id": "l2-open-1",
+          "type": "open",
+          "topic": "1.2",
+          "sourcePage": 13,
+          "question": "Explica en dos frases la diferencia entre ciencias de la computación, ingeniería de software e ingeniería de sistemas.",
+          "rubric": "Fundamentos vs práctica del software vs sistema completo hardware/software/personas."
+        },
+        {
+          "id": "l2-open-2",
+          "type": "open",
+          "topic": "1.4",
+          "sourcePage": 20,
+          "question": "Distingue funcionalidad y rendimiento mediante un ejemplo breve.",
+          "rubric": "Qué funciones ofrece y si corresponden a necesidades vs tiempo y recursos utilizados."
+        },
+        {
+          "id": "l2-open-3",
+          "type": "open",
+          "topic": "1.4",
+          "sourcePage": 22,
+          "question": "Distingue fiabilidad y seguridad con un ejemplo por característica.",
+          "rubric": "Fiabilidad disponibilidad/tolerancia/recuperación; seguridad protección de información."
+        },
+        {
+          "id": "l2-open-4",
+          "type": "open",
+          "topic": "1.5",
+          "sourcePage": 25,
+          "question": "Relaciona especificación, validación y mantenimiento con una acción concreta de cada etapa.",
+          "rubric": "Definir necesidades/restricciones; demostrar adecuación; evolucionar ante cambios."
+        },
+        {
+          "id": "l2-open-5",
+          "type": "open",
+          "topic": "2.2",
+          "sourcePage": 11,
+          "question": "Explica una diferencia entre cascada y V respecto a las pruebas.",
+          "rubric": "En V se trazan correspondencias explícitas entre fases y pruebas."
+        },
+        {
+          "id": "l2-open-6",
+          "type": "open",
+          "topic": "2.3",
+          "sourcePage": 17,
+          "question": "Explica por qué un incremento no tiene que contener todas las funciones del sistema final.",
+          "rubric": "Entrega funcionalidad básica útil y evaluable, aumentando progresivamente."
+        },
+        {
+          "id": "l2-open-7",
+          "type": "open",
+          "topic": "2.4",
+          "sourcePage": 41,
+          "question": "Nombra dos actividades asociadas con la evaluación de riesgos en espiral.",
+          "rubric": "Identificar fuentes de riesgo, evaluar alternativas, prototipar, planear acciones para reducirlos."
+        },
+        {
+          "id": "l2-open-8",
+          "type": "open",
+          "topic": "2.5",
+          "sourcePage": 55,
+          "question": "Escribe en orden las cuatro fases de RUP.",
+          "rubric": "Inicio, elaboración, construcción, transición."
+        },
+        {
+          "id": "l2-open-9",
+          "type": "open",
+          "topic": "2.6",
+          "sourcePage": 103,
+          "question": "Distingue Product Backlog, Sprint Backlog e incremento de Scrum.",
+          "rubric": "Lista de trabajo del producto; trabajo elegido para el sprint; producto usable logrado."
+        }
+      ]
+    },
+    "3": {
+      "name": "Difícil",
+      "subtitle": "Preguntas abiertas y explicación razonada",
+      "questions": [
+        {
+          "id": "l3-1",
+          "type": "open",
+          "topic": "1.1",
+          "sourcePage": 3,
+          "question": "Compara las definiciones atribuidas a Bauer, IEEE, Alan Davis y Boehm. Identifica un rasgo distintivo de cada una.",
+          "rubric": "Bauer: fiabilidad, economía y máquinas reales; IEEE: enfoque sistemático y cuantificable; Davis: usuario y costo; Boehm: conocimiento científico y documentación."
+        },
+        {
+          "id": "l3-2",
+          "type": "open",
+          "topic": "1.2",
+          "sourcePage": 6,
+          "question": "Explica la crisis del software y relaciónala con la conferencia de Garmisch de 1968.",
+          "rubric": "Creciente complejidad del software frente a capacidades organizativas y demoras; Garmisch como hito de ingeniería."
+        },
+        {
+          "id": "l3-3",
+          "type": "open",
+          "topic": "1.2",
+          "sourcePage": 7,
+          "question": "Describe las cuatro eras históricas expuestas e indica al menos un cambio característico de cada una.",
+          "rubric": "Inicio artesanal sin metodología; software como producto; complejidad/redes; amplio impacto e IA."
+        },
+        {
+          "id": "l3-4",
+          "type": "open",
+          "topic": "1.2",
+          "sourcePage": 11,
+          "question": "Explica cómo contribuyen matemáticas, gestión de proyectos e ingeniería de sistemas a desarrollar software.",
+          "rubric": "Formalización/corrección; presupuesto/plazos/equipo; visión de sistema incl. hardware/humanos."
+        },
+        {
+          "id": "l3-5",
+          "type": "open",
+          "topic": "1.2",
+          "sourcePage": 14,
+          "question": "Elige cinco áreas SWEBOK mencionadas y explica para qué sirve cada una dentro de un proyecto.",
+          "rubric": "Requisitos, diseño, construcción, pruebas, mantenimiento, configuración, procesos, calidad, gestión y herramientas."
+        },
+        {
+          "id": "l3-6",
+          "type": "open",
+          "topic": "1.3",
+          "sourcePage": 15,
+          "question": "Justifica por qué el software no se gestiona igual que un producto industrial físico.",
+          "rubric": "Lógico, desarrollado no fabricado, ausencia de desgaste físico, a medida, costos ingeniería."
+        },
+        {
+          "id": "l3-7",
+          "type": "open",
+          "topic": "1.3",
+          "sourcePage": 17,
+          "question": "Explica la afirmación «el software no se estropea» sin confundirla con ausencia de errores o mantenimiento.",
+          "rubric": "Ausencia desgaste material; defectos lógicos; errores pueden emerger y cambios exigen mantenimiento."
+        },
+        {
+          "id": "l3-8",
+          "type": "open",
+          "topic": "1.4",
+          "sourcePage": 20,
+          "question": "Describe las ocho características de calidad del producto que aparecen en las diapositivas y ofrece un ejemplo por cada una.",
+          "rubric": "Funcionalidad, rendimiento, compatibilidad, fiabilidad, usabilidad, seguridad, mantenibilidad, portabilidad."
+        },
+        {
+          "id": "l3-9",
+          "type": "open",
+          "topic": "1.4",
+          "sourcePage": 21,
+          "question": "Diferencia interoperabilidad y coexistencia, y menciona cómo se relacionan con compatibilidad.",
+          "rubric": "Compatibilidad integra coexistencia e interoperabilidad."
+        },
+        {
+          "id": "l3-10",
+          "type": "open",
+          "topic": "1.5",
+          "sourcePage": 24,
+          "question": "Explica qué es un proceso de software y por qué no existe uno ideal para todos los proyectos.",
+          "rubric": "Actividades y resultados; distintos riesgos/contextos requieren flexibilidad o estructura."
+        },
+        {
+          "id": "l3-11",
+          "type": "open",
+          "topic": "1.5",
+          "sourcePage": 25,
+          "question": "Explica las cuatro actividades esenciales del proceso de software y el resultado esperado de cada una.",
+          "rubric": "Especificación, diseño/implementación, validación, mantenimiento/evolución."
+        },
+        {
+          "id": "l3-12",
+          "type": "open",
+          "topic": "1.6",
+          "sourcePage": 30,
+          "question": "Define CASE y clasifica seis herramientas mencionadas de acuerdo con su función, por ejemplo Git, Jenkins, DOORS, Selenium, Jira y Swagger.",
+          "rubric": "CASE apoyo a actividades; Git versiones, Jenkins CI/CD, DOORS requisitos, Selenium pruebas web, Jira tareas, Swagger APIs."
+        },
+        {
+          "id": "l3-13",
+          "type": "open",
+          "topic": "2.1",
+          "sourcePage": 3,
+          "question": "Define modelo de proceso de software y explica por qué se considera representación abstracta y adaptable.",
+          "rubric": "Perspectiva parcial de actividades, útil para comprender/adaptar procesos reales."
+        },
+        {
+          "id": "l3-14",
+          "type": "open",
+          "topic": "2.2",
+          "sourcePage": 7,
+          "question": "Describe las fases del modelo cascada y dos limitaciones si el cliente cambia requisitos durante el desarrollo.",
+          "rubric": "Requisitos; diseño; implementación/pruebas unidad; integración/pruebas sistema; operación/mantenimiento. Rigidez y retraso de retroalimentación."
+        },
+        {
+          "id": "l3-15",
+          "type": "open",
+          "topic": "2.2",
+          "sourcePage": 11,
+          "question": "Dibuja o describe el modelo en V y empareja análisis, diseño y codificación con sus pruebas.",
+          "rubric": "Requisitos con aceptación; diseño con integración/sistema; código con unitarias."
+        },
+        {
+          "id": "l3-16",
+          "type": "open",
+          "topic": "2.3",
+          "sourcePage": 15,
+          "question": "Explica cómo opera el modelo incremental y compara tres ventajas frente al desarrollo estrictamente secuencial.",
+          "rubric": "Entregas funcionales graduales, priorización, pruebas pequeñas, feedback temprano."
+        },
+        {
+          "id": "l3-17",
+          "type": "open",
+          "topic": "2.3",
+          "sourcePage": 23,
+          "question": "Describe las etapas de DRA y explica una condición que podría dificultar su aplicación.",
+          "rubric": "Gestión, datos, procesos, generación, pruebas/entrega; recursos/herramientas/compromiso."
+        },
+        {
+          "id": "l3-18",
+          "type": "open",
+          "topic": "2.4",
+          "sourcePage": 30,
+          "question": "Compara desarrollo exploratorio y prototipos desechables. ¿Qué necesidad atiende cada uno?",
+          "rubric": "Evolucionar producto final vs aclarar requisitos con prototipo temporal."
+        },
+        {
+          "id": "l3-19",
+          "type": "open",
+          "topic": "2.4",
+          "sourcePage": 40,
+          "question": "Describe los cuatro sectores de un ciclo del modelo espiral y explica la función del análisis de riesgos.",
+          "rubric": "Objetivos; evaluación/reducción riesgos; desarrollo/validación; planificación ciclo siguiente."
+        },
+        {
+          "id": "l3-20",
+          "type": "open",
+          "topic": "2.4",
+          "sourcePage": 45,
+          "question": "Explica qué significa concurrencia de actividades del desarrollo y una ventaja práctica.",
+          "rubric": "Actividades simultáneas en distintos estados; trabajo multidisciplinario."
+        },
+        {
+          "id": "l3-21",
+          "type": "open",
+          "topic": "2.5",
+          "sourcePage": 51,
+          "question": "Explica las tres características de RUP: dirigido por casos de uso, centrado en arquitectura, iterativo/incremental.",
+          "rubric": "Casos de uso para requisitos; arquitectura estructural; desarrollo por ciclos."
+        },
+        {
+          "id": "l3-22",
+          "type": "open",
+          "topic": "2.5",
+          "sourcePage": 55,
+          "question": "Explica las cuatro fases de RUP y asigna a cada una un objetivo o entregable de la presentación.",
+          "rubric": "Inicio negocio; elaboración arquitectura/riesgos; construcción producto; transición uso real."
+        },
+        {
+          "id": "l3-23",
+          "type": "open",
+          "topic": "2.6",
+          "sourcePage": 67,
+          "question": "Explica los cuatro valores del Manifiesto Ágil y su efecto ante cambios solicitados por clientes.",
+          "rubric": "Individuos; software funcionando; colaboración; responder cambios, sin afirmar rechazo absoluto de documentación."
+        },
+        {
+          "id": "l3-24",
+          "type": "open",
+          "topic": "2.6",
+          "sourcePage": 73,
+          "question": "Explica roles, historias de usuario y tres prácticas concretas de XP.",
+          "rubric": "Cliente, programador, tester, tracker, coach, consultor, gestor; historias; parejas, TDD/pruebas, refactorización, integración continua."
+        },
+        {
+          "id": "l3-25",
+          "type": "open",
+          "topic": "2.6",
+          "sourcePage": 88,
+          "question": "Describe principios de DSDM y explica cómo se combinan participación del usuario, entregas a tiempo y calidad.",
+          "rubric": "Negocio, tiempo, colaborar, no comprometer calidad, bases firmes, iteración, comunicación, control."
+        },
+        {
+          "id": "l3-26",
+          "type": "open",
+          "topic": "2.6",
+          "sourcePage": 102,
+          "question": "Explica roles, artefactos y eventos de Scrum; diferencia claramente revisión y retrospectiva.",
+          "rubric": "Product Owner, Scrum Master, Developers; Product/Sprint Backlog e incremento; planning, daily, review, retro."
+        },
+        {
+          "id": "l3-27",
+          "type": "open",
+          "topic": "2.7",
+          "sourcePage": 109,
+          "question": "Explica las fases de modelos formales y compara dos familias de notaciones: algebraica, primer orden, redes de Petri o lógica temporal.",
+          "rubric": "Análisis, especificación formal, transformación, integración; dos métodos con función."
+        }
+      ]
+    },
+    "4": {
+      "name": "Simulacro",
+      "subtitle": "Casos prácticos y aplicación del conocimiento",
+      "questions": [
+        {
+          "id": "l4-1",
+          "type": "case",
+          "topic": "1.1 - 1.3",
+          "sourcePage": 3,
+          "title": "Caso 1. Crisis de un proyecto sin ingeniería",
+          "context": "Una organización inicia el desarrollo sin planificación. Los requisitos cambian informalmente, el equipo trabaja sin documentación y la entrega se retrasa. La dirección afirma que el software se puede fabricar exactamente como un objeto físico.",
+          "parts": [
+            {
+              "points": 3,
+              "question": "Explica dos causas del fracaso con conceptos de la crisis del software."
+            },
+            {
+              "points": 3,
+              "question": "Refuta la analogía de fabricación física usando dos características del software."
+            },
+            {
+              "points": 2,
+              "question": "Propón una medida de gestión del proyecto y su finalidad."
+            }
+          ],
+          "points": 8,
+          "rubric": "Identifica crisis por complejidad y planificación; diferencia lógica/desarrollo y no desgaste; propone planificación/gestión. (3+3+2)."
+        },
+        {
+          "id": "l4-2",
+          "type": "case",
+          "topic": "1.4",
+          "sourcePage": 20,
+          "title": "Caso 2. Diagnóstico de calidad de una plataforma",
+          "context": "Una aplicación de trámites contiene las funciones solicitadas, pero tarda demasiado, se cae frecuentemente, expone datos personales y resulta difícil para usuarios nuevos.",
+          "parts": [
+            {
+              "points": 4,
+              "question": "Identifica cuatro características de calidad afectadas y justifica cada una."
+            },
+            {
+              "points": 2,
+              "question": "Propón una acción de mejora para dos características."
+            }
+          ],
+          "points": 6,
+          "rubric": "Rendimiento, fiabilidad, seguridad y usabilidad; mejoras concretas justificadas. (4+2)."
+        },
+        {
+          "id": "l4-3",
+          "type": "case",
+          "topic": "1.5 - 1.6",
+          "sourcePage": 25,
+          "title": "Caso 3. Proceso y herramientas",
+          "context": "Un equipo desarrollará una aplicación escolar. Recibirá requisitos, implementará funciones, hará pruebas y mantendrá el producto. Quiere además controlar versiones y automatizar pruebas.",
+          "parts": [
+            {
+              "points": 4,
+              "question": "Ubica cuatro actividades principales del proceso y un producto o evidencia de cada una."
+            },
+            {
+              "points": 3,
+              "question": "Elige tres herramientas de las diapositivas para versiones, pruebas y gestión de requisitos, con justificación."
+            }
+          ],
+          "points": 7,
+          "rubric": "Especificación, diseño/implementación, validación, evolución; Git, Selenium/PyTest/JUnit, DOORS/Confluence. (4+3)."
+        },
+        {
+          "id": "l4-4",
+          "type": "case",
+          "topic": "2.2",
+          "sourcePage": 7,
+          "title": "Caso 4. Cascada o modelo en V",
+          "context": "Una dependencia solicita un sistema con requisitos bastante estables y exige evidencias de prueba formal al finalizar cada nivel técnico.",
+          "parts": [
+            {
+              "points": 4,
+              "question": "Selecciona cascada o V y explica por qué el elegido resulta más pertinente."
+            },
+            {
+              "points": 3,
+              "question": "Vincula dos niveles de desarrollo con sus pruebas correspondientes."
+            },
+            {
+              "points": 2,
+              "question": "Menciona una limitación de este enfoque si surgen cambios."
+            }
+          ],
+          "points": 9,
+          "rubric": "V por trazabilidad explícita de desarrollo/pruebas; análisis-aceptación, diseño-integración/sistema, código-unitarias; rigidez. (4+3+2)."
+        },
+        {
+          "id": "l4-5",
+          "type": "case",
+          "topic": "2.3",
+          "sourcePage": 15,
+          "title": "Caso 5. Entregas incrementales y DRA",
+          "context": "Una cooperativa necesita reservas básicas en un primer mes, pagos en una segunda entrega y reportes después. Otro equipo propone una aplicación pequeña en un periodo de 60 a 90 días utilizando componentes y herramientas visuales.",
+          "parts": [
+            {
+              "points": 4,
+              "question": "Justifica por qué las entregas de la cooperativa son incrementales y define tres incrementos."
+            },
+            {
+              "points": 3,
+              "question": "Explica por qué el segundo proyecto se acerca a DRA y menciona dos de sus etapas."
+            },
+            {
+              "points": 2,
+              "question": "Indica un riesgo de planificación o integración en cualquiera de ambos modelos."
+            }
+          ],
+          "points": 9,
+          "rubric": "Incrementos funcionales sucesivos; DRA corto y basado en herramientas/componentes con modelados y pruebas; riesgo pertinente. (4+3+2)."
+        },
+        {
+          "id": "l4-6",
+          "type": "case",
+          "topic": "2.4",
+          "sourcePage": 31,
+          "title": "Caso 6. Requisitos incompletos y análisis de riesgo",
+          "context": "Un hospital busca un sistema, pero aún desconoce cómo debe ser la interfaz. Además, fallos en una función crítica podrían tener consecuencias importantes.",
+          "parts": [
+            {
+              "points": 3,
+              "question": "Explica cómo emplear un prototipo para aclarar requisitos."
+            },
+            {
+              "points": 4,
+              "question": "Propón cómo usar los cuatro sectores de un ciclo de espiral para afrontar el riesgo."
+            },
+            {
+              "points": 2,
+              "question": "Diferencia un prototipo desechable de evolución hacia producto final."
+            }
+          ],
+          "points": 9,
+          "rubric": "Prototipo con evaluación de usuarios; objetivos, análisis riesgos, desarrollo/validación y plan siguiente; fin exploratorio vs desechable. (3+4+2)."
+        },
+        {
+          "id": "l4-7",
+          "type": "case",
+          "topic": "2.4 - 2.5",
+          "sourcePage": 45,
+          "title": "Caso 7. Trabajo concurrente y RUP",
+          "context": "Un equipo multidisciplinario diseña interfaz mientras otro programa servicios. La organización quiere un proceso que use casos de uso UML, privilegie arquitectura y tenga fases con objetivos definidos.",
+          "parts": [
+            {
+              "points": 2,
+              "question": "Explica el sentido de actividades concurrentes en este escenario."
+            },
+            {
+              "points": 4,
+              "question": "Identifica el proceso más apropiado y sus tres rasgos esenciales."
+            },
+            {
+              "points": 3,
+              "question": "Asigna una acción a inicio, elaboración y transición del proceso elegido."
+            }
+          ],
+          "points": 9,
+          "rubric": "Concurrencia simultánea con estados; RUP dirigido por casos de uso, arquitectura, iterativo-incremental; objetivos de tres fases. (2+4+3)."
+        },
+        {
+          "id": "l4-8",
+          "type": "case",
+          "topic": "2.6",
+          "sourcePage": 67,
+          "title": "Caso 8. Proyecto con cambios frecuentes",
+          "context": "Una startup cambia prioridades cada dos semanas y necesita aprender del cliente mediante entregas utilizables. La dirección exige documentación exhaustiva antes de mostrar el primer producto.",
+          "parts": [
+            {
+              "points": 3,
+              "question": "Relaciona tres valores o principios ágiles con la situación."
+            },
+            {
+              "points": 3,
+              "question": "Propón una adaptación realista de la documentación y la colaboración."
+            },
+            {
+              "points": 3,
+              "question": "Explica cómo comprobarías progreso sin usar únicamente documentos."
+            }
+          ],
+          "points": 9,
+          "rubric": "Adaptación, colaboración, entregas frecuentes/software funciona, documentación útil no nula; incremento probado. (3+3+3)."
+        },
+        {
+          "id": "l4-9",
+          "type": "case",
+          "topic": "2.6",
+          "sourcePage": 73,
+          "title": "Caso 9. Elegir prácticas XP y DSDM",
+          "context": "Una aplicación tiene requisitos imprecisos y fallos frecuentes tras fusionar cambios. Los clientes pueden participar de manera constante, pero las fechas de entrega son fijas.",
+          "parts": [
+            {
+              "points": 3,
+              "question": "Selecciona tres prácticas XP y vincúlalas con problemas observados."
+            },
+            {
+              "points": 3,
+              "question": "Elige dos principios de DSDM relacionados con fechas y calidad."
+            },
+            {
+              "points": 2,
+              "question": "Explica la participación del cliente en historias de usuario o revisión de entregas."
+            }
+          ],
+          "points": 8,
+          "rubric": "XP parejas, pruebas, integración, refactorización; DSDM timeboxing y calidad, colaboración; historias/priorización. (3+3+2)."
+        },
+        {
+          "id": "l4-10",
+          "type": "case",
+          "topic": "2.6",
+          "sourcePage": 103,
+          "title": "Caso 10. Organización de un sprint Scrum",
+          "context": "Un equipo recibe diez mejoras, elige tres para el próximo sprint y presenta un incremento al final. Tiene dificultades de coordinación diaria y confunde la revisión del producto con la mejora del proceso.",
+          "parts": [
+            {
+              "points": 3,
+              "question": "Diferencia Product Backlog, Sprint Backlog e incremento mediante el caso."
+            },
+            {
+              "points": 3,
+              "question": "Asigna funciones a Product Owner, Scrum Master y Developers."
+            },
+            {
+              "points": 3,
+              "question": "Explica para qué sirven Daily, Sprint Review y Sprint Retrospective."
+            }
+          ],
+          "points": 9,
+          "rubric": "Artefactos correctos; papeles correctamente distinguidos; eventos orientados coordinación/producto/proceso. (3+3+3)."
+        },
+        {
+          "id": "l4-11",
+          "type": "case",
+          "topic": "2.7",
+          "sourcePage": 109,
+          "title": "Caso 11. Verificación rigurosa de un sistema crítico",
+          "context": "Una empresa controla la señalización de una vía ferroviaria. Debe especificar de forma inequívoca que dos trenes nunca reciban autorización simultánea para ocupar el mismo tramo.",
+          "parts": [
+            {
+              "points": 4,
+              "question": "Justifica el uso de métodos formales y plantea una propiedad verificable del sistema."
+            },
+            {
+              "points": 3,
+              "question": "Explica las fases del enfoque formal en orden."
+            },
+            {
+              "points": 2,
+              "question": "Elige una familia de formalismo de las láminas y fundamenta su utilidad."
+            }
+          ],
+          "points": 9,
+          "rubric": "Sistemas críticos y propiedades formales; análisis-especificación-transformación-integración; redes de Petri/lógica temporal/primer orden. (4+3+2)."
+        }
+      ]
+    }
+  },
+  "bibliography": [
+    "Whitten, Jeffrey L.; Bentley, Lonnie D. Análisis de sistemas: diseño y métodos. McGraw-Hill, 2008, 7.ª ed.",
+    "Kendall, Kenneth E.; Kendall, Julie E. Análisis y diseño de sistemas. Pearson Educación, 2011, 8.ª ed.",
+    "Schach, Stephen R. Análisis y diseño orientado a objetos: con UML y el proceso unificado. McGraw-Hill, 2005.",
+    "Booch, Grady; Rumbaugh, James; Jacobson, Ivar. El lenguaje unificado de modelado: Guía del usuario. Addison Wesley, 2006, 2.ª ed.",
+    "Weitzenfeld, Alfredo. Ingeniería de software orientada a objetos con UML, Java e Internet. Thomson, 2005.",
+    "Bruegge, Bernd; Dutoit, Allen H. Ingeniería de software orientado a objetos. Pearson Educación, 2002.",
+    "Sommerville, Ian. Ingeniería de software. Pearson Educación, 2011, 9.ª ed.",
+    "Braude, Eric J. Ingeniería de software: una perspectiva orientada a objetos. Alfaomega, 2003.",
+    "Pfleeger, Shari L. Ingeniería del software: teoría y práctica. Prentice Hall, 2002."
+  ],
+  "heuristics": [
+    [
+      "Visibilidad del estado del sistema",
+      "Barra de avance en clases y exámenes; mensajes de guardado local."
+    ],
+    [
+      "Correspondencia con el mundo real",
+      "Nombres de unidades, ejercicios, respuestas y subrayado familiares."
+    ],
+    [
+      "Control y libertad",
+      "Volver, cambiar opciones, saltar preguntas y deshacer subrayados."
+    ],
+    [
+      "Consistencia y estándares",
+      "Botones, estados, colores y enlaces consistentes."
+    ],
+    [
+      "Prevención de errores",
+      "Aviso antes de entregar incompletos y opción de guardar."
+    ],
+    [
+      "Reconocimiento antes que recuerdo",
+      "Índice persistente y acceso inmediato a títulos y definiciones (fuera del examen)."
+    ],
+    [
+      "Flexibilidad y eficiencia",
+      "Atajos de teclado, búsqueda de temas, continuación de sesión."
+    ],
+    [
+      "Estética minimalista",
+      "Lecturas sin ruido, modo concentración y animación mínima."
+    ],
+    [
+      "Ayuda para reconocer y corregir errores",
+      "Explicaciones posteriores con enlaces al tema relevante."
+    ],
+    [
+      "Ayuda y documentación",
+      "Ayuda contextual y guía del estudiante descargable."
+    ]
+  ],
+  "sources": [
+    {
+      "title": "Temario de Ingeniería de Software I, Universidad de la Sierra Juárez",
+      "name": "Ingeniería de Software I.pdf",
+      "type": "Diapositivas / temario"
+    },
+    {
+      "title": "Unidad I. Introducción a la Ingeniería de Software (38 páginas)",
+      "name": "Unidad I INTRODUCCIÓN A LA INGENIERÍA DE SOFTWARE 2023.pdf",
+      "type": "Presentación de clase"
+    },
+    {
+      "title": "Unidad II. Modelos de Procesos de Software (154 páginas)",
+      "name": "Unidad II MODELOS DE PROCESOS DE SOFTWARE 2023.pdf",
+      "type": "Presentación de clase"
+    },
+    {
+      "title": "ISO/IEC 25010:2023 – Modelo de calidad del producto",
+      "url": "https://www.iso.org/standard/78176.html",
+      "type": "Fuente externa de actualización"
+    },
+    {
+      "title": "Guía Scrum oficial 2020",
+      "url": "https://scrumguides.org/download.html",
+      "type": "Fuente externa de actualización"
+    },
+    {
+      "title": "Nielsen Norman Group — 10 heurísticas de usabilidad",
+      "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+      "type": "Diseño de interfaz"
+    },
+    {
+      "title": "Dunlosky et al., 2013. Técnicas eficaces de estudio. DOI 10.1177/1529100612453266",
+      "url": "https://doi.org/10.1177/1529100612453266",
+      "type": "Evidencia educativa"
+    },
+    {
+      "title": "Roediger y Karpicke, 2006. Test-enhanced learning. DOI 10.1111/j.1467-9280.2006.01693.x",
+      "url": "https://doi.org/10.1111/j.1467-9280.2006.01693.x",
+      "type": "Evidencia educativa"
+    }
+  ]
+}

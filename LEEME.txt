@@ -1,0 +1,44 @@
+ACADEMIA DE REPASO · INGENIERÍA DE SOFTWARE I
+==============================================
+
+1. Abre index.html en un navegador actualizado.
+2. Abre "Temario completo" y selecciona una lección.
+3. Selecciona una frase y utiliza "Subrayar selección". Puedes cambiar el color, quitar una marca pulsándola o deshacer la última.
+4. Anota ideas propias, recuerda antes de revelar conceptos y marca temas estudiados.
+5. En "Los cuatro exámenes", realiza los niveles 1 a 4. Las preguntas cerradas se califican al entregar; las abiertas ofrecen rúbricas de autoevaluación.
+6. En "Repaso activo" repite la pregunta de memoria en los días sugeridos.
+7. En "Descargas y fuentes" puedes obtener los PDF de exámenes limpios, la guía, las presentaciones y un respaldo local de notas y progreso.
+
+CONTENIDO
+- Unidad I, apartados 1.1 a 1.6.
+- Unidad II, apartados 2.1 a 2.7, con todos sus subtemas.
+- 24 lecciones, 176 reactivos en 4 niveles.
+- Material tomado de las presentaciones facilitadas y ampliaciones señaladas.
+
+ARCHIVOS
+- index.html: página principal.
+- styles.css: diseño adaptativo y accesibilidad.
+- app.js: interacción, repasos, exámenes, subrayado y progreso.
+- data.js: textos y bancos de preguntas, también se cargan sin internet.
+- data.json: versión abierta de los contenidos para desarrollo.
+- descargas/: exámenes imprimibles, guía y presentaciones originales.
+
+PUBLICAR EN INTERNET
+Sube el contenido COMPLETO de esta carpeta, manteniendo rutas y nombres, a GitHub Pages, Netlify o a un servidor web estático. No hace falta un servidor de aplicaciones ni una base de datos.
+
+PRIVACIDAD
+Las respuestas, subrayados y notas se guardan en el almacenamiento local del navegador. No se envían a un servidor. Si borras los datos del navegador podrías perderlos: utiliza "Exportar .json" para hacer una copia. El funcionamiento del almacenamiento en modo archivo local (file://) depende del navegador; publicarla con HTTPS ofrece un comportamiento más consistente.
+
+OBSERVACIONES EDUCATIVAS
+- No incluye seguimiento individual para profesores: para ello harían falta cuentas, autenticación, sincronización y políticas de privacidad.
+- Las preguntas abiertas NO se corrigen automáticamente; requieren rúbrica y autoevaluación.
+- No promete eliminar distracciones: ofrece lectura enfocada, metas pequeñas, recuperación activa y repasos programados.
+- Los exámenes impresos no contienen soluciones.
+- 2.8 Otros modelos se excluyó porque el alcance actual termina en 2.7.
+
+EVIDENCIA Y FUENTES EXTERNAS
+- Nielsen Norman Group: https://www.nngroup.com/articles/ten-usability-heuristics/
+- Dunlosky et al., 2013: https://doi.org/10.1177/1529100612453266
+- Roediger y Karpicke, 2006: https://doi.org/10.1111/j.1467-9280.2006.01693.x
+- ISO/IEC 25010:2023: https://www.iso.org/standard/78176.html
+- Scrum Guide 2020: https://scrumguides.org/download.html
